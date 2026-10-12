@@ -1,0 +1,4307 @@
+{
+    "scenario": "wardbeck",
+    "attack_type": "privilege_escalation",
+    "wazuh_logs": [
+        {
+            "predecoder": {
+                "hostname": "watkins-mail",
+                "program_name": "dovecot",
+                "timestamp": "Jan 23 12:54:02"
+            },
+            "agent": {
+                "ip": "192.168.96.99",
+                "name": "wazuh-client",
+                "id": "8"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "Dovecot Authentication Success.",
+                "groups": [
+                    "dovecot",
+                    "authentication_success"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ],
+                "firedtimes": 143,
+                "mitre": {
+                    "technique": [
+                        "Valid Accounts"
+                    ],
+                    "id": [
+                        "T1078"
+                    ],
+                    "tactic": [
+                        "Defense Evasion",
+                        "Persistence",
+                        "Privilege Escalation",
+                        "Initial Access"
+                    ]
+                },
+                "id": "9701",
+                "gpg13": [
+                    "7.1",
+                    "7.2"
+                ]
+            },
+            "decoder": {
+                "parent": "dovecot",
+                "name": "dovecot"
+            },
+            "full_log": "Jan 23 12:54:02 watkins-mail dovecot: imap-login: Login: user=<jean.hughes>, method=PLAIN, rip=192.168.96.99, lip=192.168.96.99, mpid=9533, TLS, session=<2wusWD/WMI3AqGBj>",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T15:54:02.000000Z",
+            "location": "/var/log/mail.log",
+            "id": "1688763885.10669348"
+        },
+        {
+            "predecoder": {
+                "hostname": "watkins-mail",
+                "program_name": "dovecot",
+                "timestamp": "Jan 23 12:54:02"
+            },
+            "agent": {
+                "ip": "192.168.96.99",
+                "name": "wazuh-client",
+                "id": "8"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "Dovecot Authentication Success.",
+                "groups": [
+                    "dovecot",
+                    "authentication_success"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ],
+                "firedtimes": 142,
+                "mitre": {
+                    "technique": [
+                        "Valid Accounts"
+                    ],
+                    "id": [
+                        "T1078"
+                    ],
+                    "tactic": [
+                        "Defense Evasion",
+                        "Persistence",
+                        "Privilege Escalation",
+                        "Initial Access"
+                    ]
+                },
+                "id": "9701",
+                "gpg13": [
+                    "7.1",
+                    "7.2"
+                ]
+            },
+            "decoder": {
+                "parent": "dovecot",
+                "name": "dovecot"
+            },
+            "full_log": "Jan 23 12:54:02 watkins-mail dovecot: imap-login: Login: user=<jean.hughes>, method=PLAIN, rip=192.168.96.99, lip=192.168.96.99, mpid=9533, TLS, session=<2wusWD/WMI3AqGBj>",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:54:02.000000Z",
+            "location": "/var/log/mail.info",
+            "id": "1688763885.10668846"
+        },
+        {
+            "predecoder": {
+                "hostname": "watkins-mail",
+                "program_name": "dovecot",
+                "timestamp": "Jan 23 12:54:02"
+            },
+            "agent": {
+                "ip": "192.168.96.99",
+                "name": "wazuh-client",
+                "id": "8"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "Dovecot Authentication Success.",
+                "groups": [
+                    "dovecot",
+                    "authentication_success"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ],
+                "firedtimes": 144,
+                "mitre": {
+                    "technique": [
+                        "Valid Accounts"
+                    ],
+                    "id": [
+                        "T1078"
+                    ],
+                    "tactic": [
+                        "Defense Evasion",
+                        "Persistence",
+                        "Privilege Escalation",
+                        "Initial Access"
+                    ]
+                },
+                "id": "9701",
+                "gpg13": [
+                    "7.1",
+                    "7.2"
+                ]
+            },
+            "decoder": {
+                "parent": "dovecot",
+                "name": "dovecot"
+            },
+            "full_log": "Jan 23 12:54:02 watkins-mail dovecot: imap-login: Login: user=<jean.hughes>, method=PLAIN, rip=192.168.96.99, lip=192.168.96.99, mpid=9533, TLS, session=<2wusWD/WMI3AqGBj>",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:54:02.000000Z",
+            "location": "/var/log/syslog",
+            "id": "1688763885.10669849"
+        },
+        {
+            "predecoder": {
+                "hostname": "watkins-mail",
+                "program_name": "dovecot",
+                "timestamp": "Jan 23 12:54:10"
+            },
+            "agent": {
+                "ip": "192.168.96.99",
+                "name": "wazuh-client",
+                "id": "8"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "Dovecot Authentication Success.",
+                "groups": [
+                    "dovecot",
+                    "authentication_success"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ],
+                "firedtimes": 145,
+                "mitre": {
+                    "technique": [
+                        "Valid Accounts"
+                    ],
+                    "id": [
+                        "T1078"
+                    ],
+                    "tactic": [
+                        "Defense Evasion",
+                        "Persistence",
+                        "Privilege Escalation",
+                        "Initial Access"
+                    ]
+                },
+                "id": "9701",
+                "gpg13": [
+                    "7.1",
+                    "7.2"
+                ]
+            },
+            "decoder": {
+                "parent": "dovecot",
+                "name": "dovecot"
+            },
+            "full_log": "Jan 23 12:54:10 watkins-mail dovecot: imap-login: Login: user=<jean.hughes>, method=PLAIN, rip=192.168.96.99, lip=192.168.96.99, mpid=9535, TLS, session=<0okeWT/WMo3AqGBj>",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:54:10.000000Z",
+            "location": "/var/log/mail.info",
+            "id": "1688763893.10670348"
+        },
+        {
+            "predecoder": {
+                "hostname": "watkins-mail",
+                "program_name": "dovecot",
+                "timestamp": "Jan 23 12:54:10"
+            },
+            "agent": {
+                "ip": "192.168.96.99",
+                "name": "wazuh-client",
+                "id": "8"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "Dovecot Authentication Success.",
+                "groups": [
+                    "dovecot",
+                    "authentication_success"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ],
+                "firedtimes": 147,
+                "mitre": {
+                    "technique": [
+                        "Valid Accounts"
+                    ],
+                    "id": [
+                        "T1078"
+                    ],
+                    "tactic": [
+                        "Defense Evasion",
+                        "Persistence",
+                        "Privilege Escalation",
+                        "Initial Access"
+                    ]
+                },
+                "id": "9701",
+                "gpg13": [
+                    "7.1",
+                    "7.2"
+                ]
+            },
+            "decoder": {
+                "parent": "dovecot",
+                "name": "dovecot"
+            },
+            "full_log": "Jan 23 12:54:10 watkins-mail dovecot: imap-login: Login: user=<jean.hughes>, method=PLAIN, rip=192.168.96.99, lip=192.168.96.99, mpid=9535, TLS, session=<0okeWT/WMo3AqGBj>",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:54:10.000000Z",
+            "location": "/var/log/syslog",
+            "id": "1688763893.10671351"
+        },
+        {
+            "predecoder": {
+                "hostname": "watkins-mail",
+                "program_name": "dovecot",
+                "timestamp": "Jan 23 12:54:10"
+            },
+            "agent": {
+                "ip": "192.168.96.99",
+                "name": "wazuh-client",
+                "id": "8"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "Dovecot Authentication Success.",
+                "groups": [
+                    "dovecot",
+                    "authentication_success"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ],
+                "firedtimes": 146,
+                "mitre": {
+                    "technique": [
+                        "Valid Accounts"
+                    ],
+                    "id": [
+                        "T1078"
+                    ],
+                    "tactic": [
+                        "Defense Evasion",
+                        "Persistence",
+                        "Privilege Escalation",
+                        "Initial Access"
+                    ]
+                },
+                "id": "9701",
+                "gpg13": [
+                    "7.1",
+                    "7.2"
+                ]
+            },
+            "decoder": {
+                "parent": "dovecot",
+                "name": "dovecot"
+            },
+            "full_log": "Jan 23 12:54:10 watkins-mail dovecot: imap-login: Login: user=<jean.hughes>, method=PLAIN, rip=192.168.96.99, lip=192.168.96.99, mpid=9535, TLS, session=<0okeWT/WMo3AqGBj>",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:54:10.000000Z",
+            "location": "/var/log/mail.log",
+            "id": "1688763893.10670850"
+        },
+        {
+            "predecoder": {
+                "hostname": "watkins-mail",
+                "program_name": "dovecot",
+                "timestamp": "Jan 23 12:54:18"
+            },
+            "agent": {
+                "ip": "192.168.96.99",
+                "name": "wazuh-client",
+                "id": "8"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "Dovecot Authentication Success.",
+                "groups": [
+                    "dovecot",
+                    "authentication_success"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ],
+                "firedtimes": 149,
+                "mitre": {
+                    "technique": [
+                        "Valid Accounts"
+                    ],
+                    "id": [
+                        "T1078"
+                    ],
+                    "tactic": [
+                        "Defense Evasion",
+                        "Persistence",
+                        "Privilege Escalation",
+                        "Initial Access"
+                    ]
+                },
+                "id": "9701",
+                "gpg13": [
+                    "7.1",
+                    "7.2"
+                ]
+            },
+            "decoder": {
+                "parent": "dovecot",
+                "name": "dovecot"
+            },
+            "full_log": "Jan 23 12:54:18 watkins-mail dovecot: imap-login: Login: user=<jean.hughes>, method=PLAIN, rip=192.168.96.99, lip=192.168.96.99, mpid=9537, TLS, session=<obaZWT/WNI3AqGBj>",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:54:18.000000Z",
+            "location": "/var/log/mail.log",
+            "id": "1688763901.10672352"
+        },
+        {
+            "predecoder": {
+                "hostname": "watkins-mail",
+                "program_name": "dovecot",
+                "timestamp": "Jan 23 12:54:18"
+            },
+            "agent": {
+                "ip": "192.168.96.99",
+                "name": "wazuh-client",
+                "id": "8"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "Dovecot Authentication Success.",
+                "groups": [
+                    "dovecot",
+                    "authentication_success"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ],
+                "firedtimes": 150,
+                "mitre": {
+                    "technique": [
+                        "Valid Accounts"
+                    ],
+                    "id": [
+                        "T1078"
+                    ],
+                    "tactic": [
+                        "Defense Evasion",
+                        "Persistence",
+                        "Privilege Escalation",
+                        "Initial Access"
+                    ]
+                },
+                "id": "9701",
+                "gpg13": [
+                    "7.1",
+                    "7.2"
+                ]
+            },
+            "decoder": {
+                "parent": "dovecot",
+                "name": "dovecot"
+            },
+            "full_log": "Jan 23 12:54:18 watkins-mail dovecot: imap-login: Login: user=<jean.hughes>, method=PLAIN, rip=192.168.96.99, lip=192.168.96.99, mpid=9537, TLS, session=<obaZWT/WNI3AqGBj>",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:54:18.000000Z",
+            "location": "/var/log/syslog",
+            "id": "1688763901.10672853"
+        },
+        {
+            "predecoder": {
+                "hostname": "watkins-mail",
+                "program_name": "dovecot",
+                "timestamp": "Jan 23 12:54:18"
+            },
+            "agent": {
+                "ip": "192.168.96.99",
+                "name": "wazuh-client",
+                "id": "8"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "Dovecot Authentication Success.",
+                "groups": [
+                    "dovecot",
+                    "authentication_success"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ],
+                "firedtimes": 148,
+                "mitre": {
+                    "technique": [
+                        "Valid Accounts"
+                    ],
+                    "id": [
+                        "T1078"
+                    ],
+                    "tactic": [
+                        "Defense Evasion",
+                        "Persistence",
+                        "Privilege Escalation",
+                        "Initial Access"
+                    ]
+                },
+                "id": "9701",
+                "gpg13": [
+                    "7.1",
+                    "7.2"
+                ]
+            },
+            "decoder": {
+                "parent": "dovecot",
+                "name": "dovecot"
+            },
+            "full_log": "Jan 23 12:54:18 watkins-mail dovecot: imap-login: Login: user=<jean.hughes>, method=PLAIN, rip=192.168.96.99, lip=192.168.96.99, mpid=9537, TLS, session=<obaZWT/WNI3AqGBj>",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:54:18.000000Z",
+            "location": "/var/log/mail.info",
+            "id": "1688763901.10671850"
+        },
+        {
+            "predecoder": {
+                "hostname": "watkins-mail",
+                "program_name": "dovecot",
+                "timestamp": "Jan 23 12:54:51"
+            },
+            "agent": {
+                "ip": "192.168.96.99",
+                "name": "wazuh-client",
+                "id": "8"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "Dovecot Authentication Success.",
+                "groups": [
+                    "dovecot",
+                    "authentication_success"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ],
+                "firedtimes": 151,
+                "mitre": {
+                    "technique": [
+                        "Valid Accounts"
+                    ],
+                    "id": [
+                        "T1078"
+                    ],
+                    "tactic": [
+                        "Defense Evasion",
+                        "Persistence",
+                        "Privilege Escalation",
+                        "Initial Access"
+                    ]
+                },
+                "id": "9701",
+                "gpg13": [
+                    "7.1",
+                    "7.2"
+                ]
+            },
+            "decoder": {
+                "parent": "dovecot",
+                "name": "dovecot"
+            },
+            "full_log": "Jan 23 12:54:51 watkins-mail dovecot: imap-login: Login: user=<jean.hughes>, method=PLAIN, rip=192.168.96.99, lip=192.168.96.99, mpid=9541, TLS, session=<RmaRWz/WOI3AqGBj>",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:54:51.000000Z",
+            "location": "/var/log/mail.info",
+            "id": "1688763935.10673352"
+        },
+        {
+            "predecoder": {
+                "hostname": "watkins-mail",
+                "program_name": "dovecot",
+                "timestamp": "Jan 23 12:54:51"
+            },
+            "agent": {
+                "ip": "192.168.96.99",
+                "name": "wazuh-client",
+                "id": "8"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "Dovecot Authentication Success.",
+                "groups": [
+                    "dovecot",
+                    "authentication_success"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ],
+                "firedtimes": 153,
+                "mitre": {
+                    "technique": [
+                        "Valid Accounts"
+                    ],
+                    "id": [
+                        "T1078"
+                    ],
+                    "tactic": [
+                        "Defense Evasion",
+                        "Persistence",
+                        "Privilege Escalation",
+                        "Initial Access"
+                    ]
+                },
+                "id": "9701",
+                "gpg13": [
+                    "7.1",
+                    "7.2"
+                ]
+            },
+            "decoder": {
+                "parent": "dovecot",
+                "name": "dovecot"
+            },
+            "full_log": "Jan 23 12:54:51 watkins-mail dovecot: imap-login: Login: user=<jean.hughes>, method=PLAIN, rip=192.168.96.99, lip=192.168.96.99, mpid=9541, TLS, session=<RmaRWz/WOI3AqGBj>",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:54:51.000000Z",
+            "location": "/var/log/syslog",
+            "id": "1688763935.10674355"
+        },
+        {
+            "predecoder": {
+                "hostname": "watkins-mail",
+                "program_name": "dovecot",
+                "timestamp": "Jan 23 12:54:51"
+            },
+            "agent": {
+                "ip": "192.168.96.99",
+                "name": "wazuh-client",
+                "id": "8"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "Dovecot Authentication Success.",
+                "groups": [
+                    "dovecot",
+                    "authentication_success"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ],
+                "firedtimes": 152,
+                "mitre": {
+                    "technique": [
+                        "Valid Accounts"
+                    ],
+                    "id": [
+                        "T1078"
+                    ],
+                    "tactic": [
+                        "Defense Evasion",
+                        "Persistence",
+                        "Privilege Escalation",
+                        "Initial Access"
+                    ]
+                },
+                "id": "9701",
+                "gpg13": [
+                    "7.1",
+                    "7.2"
+                ]
+            },
+            "decoder": {
+                "parent": "dovecot",
+                "name": "dovecot"
+            },
+            "full_log": "Jan 23 12:54:51 watkins-mail dovecot: imap-login: Login: user=<jean.hughes>, method=PLAIN, rip=192.168.96.99, lip=192.168.96.99, mpid=9541, TLS, session=<RmaRWz/WOI3AqGBj>",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:54:51.000000Z",
+            "location": "/var/log/mail.log",
+            "id": "1688763935.10673854"
+        },
+        {
+            "predecoder": {
+                "hostname": "intranet-server",
+                "program_name": "su",
+                "timestamp": "Jan 23 12:55:01"
+            },
+            "agent": {
+                "ip": "172.21.241.88",
+                "name": "wazuh-client",
+                "id": "12"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "data": {
+                "srcuser": "www",
+                "dstuser": "data:blord"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "User successfully changed UID.",
+                "groups": [
+                    "syslog",
+                    "su",
+                    "authentication_success"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gdpr": [
+                    "IV_35.7.d",
+                    "IV_32.2"
+                ],
+                "firedtimes": 1,
+                "mitre": {
+                    "technique": [
+                        "Valid Accounts"
+                    ],
+                    "id": [
+                        "T1078"
+                    ],
+                    "tactic": [
+                        "Defense Evasion",
+                        "Persistence",
+                        "Privilege Escalation",
+                        "Initial Access"
+                    ]
+                },
+                "id": "5304",
+                "gpg13": [
+                    "7.6",
+                    "7.8"
+                ]
+            },
+            "decoder": {
+                "parent": "su",
+                "name": "su"
+            },
+            "full_log": "Jan 23 12:55:01 intranet-server su[28708]: + /dev/pts/1 www-data:blord",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:55:01.000000Z",
+            "location": "/var/log/auth.log",
+            "id": "1688763945.10674854"
+        },
+        {
+            "predecoder": {
+                "hostname": "intranet-server",
+                "program_name": "su",
+                "timestamp": "Jan 23 12:55:01"
+            },
+            "agent": {
+                "ip": "172.21.241.88",
+                "name": "wazuh-client",
+                "id": "12"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "data": {
+                "uid": "33",
+                "dstuser": "blord"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "PAM: Login session opened.",
+                "groups": [
+                    "pam",
+                    "syslog",
+                    "authentication_success"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ],
+                "firedtimes": 1,
+                "mitre": {
+                    "technique": [
+                        "Valid Accounts"
+                    ],
+                    "id": [
+                        "T1078"
+                    ],
+                    "tactic": [
+                        "Defense Evasion",
+                        "Persistence",
+                        "Privilege Escalation",
+                        "Initial Access"
+                    ]
+                },
+                "id": "5501",
+                "gpg13": [
+                    "7.8",
+                    "7.9"
+                ]
+            },
+            "decoder": {
+                "parent": "pam",
+                "name": "pam"
+            },
+            "full_log": "Jan 23 12:55:01 intranet-server su[28708]: pam_unix(su:session): session opened for user blord by (uid=33)",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:55:01.000000Z",
+            "location": "/var/log/auth.log",
+            "id": "1688763945.10675297"
+        },
+        {
+            "predecoder": {
+                "hostname": "intranet-server",
+                "program_name": "systemd",
+                "timestamp": "Jan 23 12:55:01"
+            },
+            "agent": {
+                "ip": "172.21.241.88",
+                "name": "wazuh-client",
+                "id": "12"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "data": {
+                "uid": "0",
+                "dstuser": "blord"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "PAM: Login session opened.",
+                "groups": [
+                    "pam",
+                    "syslog",
+                    "authentication_success"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ],
+                "firedtimes": 2,
+                "mitre": {
+                    "technique": [
+                        "Valid Accounts"
+                    ],
+                    "id": [
+                        "T1078"
+                    ],
+                    "tactic": [
+                        "Defense Evasion",
+                        "Persistence",
+                        "Privilege Escalation",
+                        "Initial Access"
+                    ]
+                },
+                "id": "5501",
+                "gpg13": [
+                    "7.8",
+                    "7.9"
+                ]
+            },
+            "decoder": {
+                "parent": "pam",
+                "name": "pam"
+            },
+            "full_log": "Jan 23 12:55:01 intranet-server systemd: pam_unix(systemd-user:session): session opened for user blord by (uid=0)",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:55:01.000000Z",
+            "location": "/var/log/auth.log",
+            "id": "1688763945.10675761"
+        },
+        {
+            "predecoder": {
+                "hostname": "mail",
+                "program_name": "dovecot",
+                "timestamp": "Jan 23 12:55:04"
+            },
+            "agent": {
+                "ip": "10.132.56.171",
+                "name": "wazuh-client",
+                "id": "25"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "Dovecot Authentication Success.",
+                "groups": [
+                    "dovecot",
+                    "authentication_success"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ],
+                "firedtimes": 154,
+                "mitre": {
+                    "technique": [
+                        "Valid Accounts"
+                    ],
+                    "id": [
+                        "T1078"
+                    ],
+                    "tactic": [
+                        "Defense Evasion",
+                        "Persistence",
+                        "Privilege Escalation",
+                        "Initial Access"
+                    ]
+                },
+                "id": "9701",
+                "gpg13": [
+                    "7.1",
+                    "7.2"
+                ]
+            },
+            "decoder": {
+                "parent": "dovecot",
+                "name": "dovecot"
+            },
+            "full_log": "Jan 23 12:55:04 mail dovecot: imap-login: Login: user=<michael.bennett>, method=PLAIN, rip=10.132.56.171, lip=10.132.56.171, mpid=6392, TLS, session=<iKhcXD/WxroKhDir>",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:55:04.000000Z",
+            "location": "/var/log/mail.info",
+            "id": "1688763947.10676231"
+        },
+        {
+            "predecoder": {
+                "hostname": "mail",
+                "program_name": "dovecot",
+                "timestamp": "Jan 23 12:55:04"
+            },
+            "agent": {
+                "ip": "10.132.56.171",
+                "name": "wazuh-client",
+                "id": "25"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "Dovecot Authentication Success.",
+                "groups": [
+                    "dovecot",
+                    "authentication_success"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ],
+                "firedtimes": 156,
+                "mitre": {
+                    "technique": [
+                        "Valid Accounts"
+                    ],
+                    "id": [
+                        "T1078"
+                    ],
+                    "tactic": [
+                        "Defense Evasion",
+                        "Persistence",
+                        "Privilege Escalation",
+                        "Initial Access"
+                    ]
+                },
+                "id": "9701",
+                "gpg13": [
+                    "7.1",
+                    "7.2"
+                ]
+            },
+            "decoder": {
+                "parent": "dovecot",
+                "name": "dovecot"
+            },
+            "full_log": "Jan 23 12:55:04 mail dovecot: imap-login: Login: user=<michael.bennett>, method=PLAIN, rip=10.132.56.171, lip=10.132.56.171, mpid=6392, TLS, session=<iKhcXD/WxroKhDir>",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:55:04.000000Z",
+            "location": "/var/log/syslog",
+            "id": "1688763947.10677224"
+        },
+        {
+            "predecoder": {
+                "hostname": "mail",
+                "program_name": "dovecot",
+                "timestamp": "Jan 23 12:55:04"
+            },
+            "agent": {
+                "ip": "10.132.56.171",
+                "name": "wazuh-client",
+                "id": "25"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "Dovecot Authentication Success.",
+                "groups": [
+                    "dovecot",
+                    "authentication_success"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ],
+                "firedtimes": 155,
+                "mitre": {
+                    "technique": [
+                        "Valid Accounts"
+                    ],
+                    "id": [
+                        "T1078"
+                    ],
+                    "tactic": [
+                        "Defense Evasion",
+                        "Persistence",
+                        "Privilege Escalation",
+                        "Initial Access"
+                    ]
+                },
+                "id": "9701",
+                "gpg13": [
+                    "7.1",
+                    "7.2"
+                ]
+            },
+            "decoder": {
+                "parent": "dovecot",
+                "name": "dovecot"
+            },
+            "full_log": "Jan 23 12:55:04 mail dovecot: imap-login: Login: user=<michael.bennett>, method=PLAIN, rip=10.132.56.171, lip=10.132.56.171, mpid=6392, TLS, session=<iKhcXD/WxroKhDir>",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:55:04.000000Z",
+            "location": "/var/log/mail.log",
+            "id": "1688763947.10676728"
+        },
+        {
+            "predecoder": {
+                "hostname": "intranet-server",
+                "program_name": "sudo",
+                "timestamp": "Jan 23 12:55:14"
+            },
+            "agent": {
+                "ip": "172.21.241.88",
+                "name": "wazuh-client",
+                "id": "12"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "data": {
+                "srcuser": "blord",
+                "dstuser": "root",
+                "tty": "pts/1",
+                "pwd": "/var/www/intranet.hurstwong.wardbeck.info/wp-content/uploads/2022/01",
+                "command": "list"
+            },
+            "rule": {
+                "firedtimes": 1,
+                "mail": false,
+                "level": 4,
+                "description": "First time user executed sudo.",
+                "groups": [
+                    "syslog",
+                    "sudo"
+                ],
+                "mitre": {
+                    "technique": [
+                        "Sudo and Sudo Caching"
+                    ],
+                    "id": [
+                        "T1548.003"
+                    ],
+                    "tactic": [
+                        "Privilege Escalation",
+                        "Defense Evasion"
+                    ]
+                },
+                "id": "5403"
+            },
+            "decoder": {
+                "parent": "sudo",
+                "name": "sudo",
+                "ftscomment": "First time user executed the sudo command"
+            },
+            "full_log": "Jan 23 12:55:14 intranet-server sudo:    blord : TTY=pts/1 ; PWD=/var/www/intranet.hurstwong.wardbeck.info/wp-content/uploads/2022/01 ; USER=root ; COMMAND=list",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:55:14.000000Z",
+            "location": "/var/log/auth.log",
+            "id": "1688763957.10677718"
+        },
+        {
+            "predecoder": {
+                "hostname": "intranet-server",
+                "program_name": "sudo",
+                "timestamp": "Jan 23 12:55:15"
+            },
+            "agent": {
+                "ip": "172.21.241.88",
+                "name": "wazuh-client",
+                "id": "12"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "data": {
+                "srcuser": "blord",
+                "dstuser": "root",
+                "tty": "pts/1",
+                "pwd": "/var/www/intranet.hurstwong.wardbeck.info/wp-content/uploads/2022/01",
+                "command": "/bin/cat /etc/shadow"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5",
+                    "10.2.2"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "Successful sudo to ROOT executed.",
+                "groups": [
+                    "syslog",
+                    "sudo"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7",
+                    "AC.6"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ],
+                "firedtimes": 1,
+                "mitre": {
+                    "technique": [
+                        "Sudo and Sudo Caching"
+                    ],
+                    "id": [
+                        "T1548.003"
+                    ],
+                    "tactic": [
+                        "Privilege Escalation",
+                        "Defense Evasion"
+                    ]
+                },
+                "id": "5402",
+                "gpg13": [
+                    "7.6",
+                    "7.8",
+                    "7.13"
+                ]
+            },
+            "decoder": {
+                "parent": "sudo",
+                "name": "sudo",
+                "ftscomment": "First time user executed the sudo command"
+            },
+            "full_log": "Jan 23 12:55:15 intranet-server sudo:    blord : TTY=pts/1 ; PWD=/var/www/intranet.hurstwong.wardbeck.info/wp-content/uploads/2022/01 ; USER=root ; COMMAND=/bin/cat /etc/shadow",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:55:15.000000Z",
+            "location": "/var/log/auth.log",
+            "id": "1688763959.10678179"
+        },
+        {
+            "predecoder": {
+                "hostname": "intranet-server",
+                "program_name": "sudo",
+                "timestamp": "Jan 23 12:55:15"
+            },
+            "agent": {
+                "ip": "172.21.241.88",
+                "name": "wazuh-client",
+                "id": "12"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "data": {
+                "uid": "0",
+                "dstuser": "root"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "PAM: Login session opened.",
+                "groups": [
+                    "pam",
+                    "syslog",
+                    "authentication_success"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ],
+                "firedtimes": 3,
+                "mitre": {
+                    "technique": [
+                        "Valid Accounts"
+                    ],
+                    "id": [
+                        "T1078"
+                    ],
+                    "tactic": [
+                        "Defense Evasion",
+                        "Persistence",
+                        "Privilege Escalation",
+                        "Initial Access"
+                    ]
+                },
+                "id": "5501",
+                "gpg13": [
+                    "7.8",
+                    "7.9"
+                ]
+            },
+            "decoder": {
+                "parent": "pam",
+                "name": "pam"
+            },
+            "full_log": "Jan 23 12:55:15 intranet-server sudo: pam_unix(sudo:session): session opened for user root by (uid=0)",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:55:15.000000Z",
+            "location": "/var/log/auth.log",
+            "id": "1688763959.10678847"
+        },
+        {
+            "predecoder": {
+                "hostname": "intranet-server",
+                "program_name": "sudo",
+                "timestamp": "Jan 23 12:55:16"
+            },
+            "agent": {
+                "ip": "172.21.241.88",
+                "name": "wazuh-client",
+                "id": "12"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "data": {
+                "dstuser": "root"
+            },
+            "rule": {
+                "firedtimes": 1,
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "PAM: Login session closed.",
+                "groups": [
+                    "pam",
+                    "syslog"
+                ],
+                "id": "5502",
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gpg13": [
+                    "7.8",
+                    "7.9"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ]
+            },
+            "decoder": {
+                "parent": "pam",
+                "name": "pam"
+            },
+            "full_log": "Jan 23 12:55:16 intranet-server sudo: pam_unix(sudo:session): session closed for user root",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:55:16.000000Z",
+            "location": "/var/log/auth.log",
+            "id": "1688763959.10679304"
+        },
+        {
+            "predecoder": {
+                "hostname": "intranet-server",
+                "program_name": "sudo",
+                "timestamp": "Jan 23 12:55:19"
+            },
+            "agent": {
+                "ip": "172.21.241.88",
+                "name": "wazuh-client",
+                "id": "12"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "data": {
+                "uid": "0",
+                "dstuser": "root"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "PAM: Login session opened.",
+                "groups": [
+                    "pam",
+                    "syslog",
+                    "authentication_success"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ],
+                "firedtimes": 4,
+                "mitre": {
+                    "technique": [
+                        "Valid Accounts"
+                    ],
+                    "id": [
+                        "T1078"
+                    ],
+                    "tactic": [
+                        "Defense Evasion",
+                        "Persistence",
+                        "Privilege Escalation",
+                        "Initial Access"
+                    ]
+                },
+                "id": "5501",
+                "gpg13": [
+                    "7.8",
+                    "7.9"
+                ]
+            },
+            "decoder": {
+                "parent": "pam",
+                "name": "pam"
+            },
+            "full_log": "Jan 23 12:55:19 intranet-server sudo: pam_unix(sudo:session): session opened for user root by (uid=0)",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:55:19.000000Z",
+            "location": "/var/log/auth.log",
+            "id": "1688763963.10680386"
+        },
+        {
+            "predecoder": {
+                "hostname": "intranet-server",
+                "program_name": "sudo",
+                "timestamp": "Jan 23 12:55:19"
+            },
+            "agent": {
+                "ip": "172.21.241.88",
+                "name": "wazuh-client",
+                "id": "12"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "data": {
+                "dstuser": "root"
+            },
+            "rule": {
+                "firedtimes": 2,
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "PAM: Login session closed.",
+                "groups": [
+                    "pam",
+                    "syslog"
+                ],
+                "id": "5502",
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gpg13": [
+                    "7.8",
+                    "7.9"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ]
+            },
+            "decoder": {
+                "parent": "pam",
+                "name": "pam"
+            },
+            "full_log": "Jan 23 12:55:19 intranet-server sudo: pam_unix(sudo:session): session closed for user root",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:55:19.000000Z",
+            "location": "/var/log/auth.log",
+            "id": "1688763963.10680843"
+        },
+        {
+            "predecoder": {
+                "hostname": "intranet-server",
+                "program_name": "sudo",
+                "timestamp": "Jan 23 12:55:19"
+            },
+            "agent": {
+                "ip": "172.21.241.88",
+                "name": "wazuh-client",
+                "id": "12"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "data": {
+                "srcuser": "blord",
+                "dstuser": "root",
+                "tty": "pts/1",
+                "pwd": "/var/www/intranet.hurstwong.wardbeck.info/wp-content/uploads/2022/01",
+                "command": "/bin/ls -laR /root/"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5",
+                    "10.2.2"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "Successful sudo to ROOT executed.",
+                "groups": [
+                    "syslog",
+                    "sudo"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7",
+                    "AC.6"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ],
+                "firedtimes": 2,
+                "mitre": {
+                    "technique": [
+                        "Sudo and Sudo Caching"
+                    ],
+                    "id": [
+                        "T1548.003"
+                    ],
+                    "tactic": [
+                        "Privilege Escalation",
+                        "Defense Evasion"
+                    ]
+                },
+                "id": "5402",
+                "gpg13": [
+                    "7.6",
+                    "7.8",
+                    "7.13"
+                ]
+            },
+            "decoder": {
+                "parent": "sudo",
+                "name": "sudo",
+                "ftscomment": "First time user executed the sudo command"
+            },
+            "full_log": "Jan 23 12:55:19 intranet-server sudo:    blord : TTY=pts/1 ; PWD=/var/www/intranet.hurstwong.wardbeck.info/wp-content/uploads/2022/01 ; USER=root ; COMMAND=/bin/ls -laR /root/",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:55:19.000000Z",
+            "location": "/var/log/auth.log",
+            "id": "1688763963.10679720"
+        },
+        {
+            "predecoder": {
+                "hostname": "mail",
+                "program_name": "dovecot",
+                "timestamp": "Jan 23 12:55:50"
+            },
+            "agent": {
+                "ip": "10.132.56.171",
+                "name": "wazuh-client",
+                "id": "25"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "Dovecot Authentication Success.",
+                "groups": [
+                    "dovecot",
+                    "authentication_success"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ],
+                "firedtimes": 158,
+                "mitre": {
+                    "technique": [
+                        "Valid Accounts"
+                    ],
+                    "id": [
+                        "T1078"
+                    ],
+                    "tactic": [
+                        "Defense Evasion",
+                        "Persistence",
+                        "Privilege Escalation",
+                        "Initial Access"
+                    ]
+                },
+                "id": "9701",
+                "gpg13": [
+                    "7.1",
+                    "7.2"
+                ]
+            },
+            "decoder": {
+                "parent": "dovecot",
+                "name": "dovecot"
+            },
+            "full_log": "Jan 23 12:55:50 mail dovecot: imap-login: Login: user=<ashley.garcia>, method=PLAIN, rip=10.132.56.171, lip=10.132.56.171, mpid=6398, TLS, session=<vjEhXz/WyroKhDir>",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:55:50.000000Z",
+            "location": "/var/log/mail.log",
+            "id": "1688763993.10681754"
+        },
+        {
+            "predecoder": {
+                "hostname": "mail",
+                "program_name": "dovecot",
+                "timestamp": "Jan 23 12:55:50"
+            },
+            "agent": {
+                "ip": "10.132.56.171",
+                "name": "wazuh-client",
+                "id": "25"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "Dovecot Authentication Success.",
+                "groups": [
+                    "dovecot",
+                    "authentication_success"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ],
+                "firedtimes": 159,
+                "mitre": {
+                    "technique": [
+                        "Valid Accounts"
+                    ],
+                    "id": [
+                        "T1078"
+                    ],
+                    "tactic": [
+                        "Defense Evasion",
+                        "Persistence",
+                        "Privilege Escalation",
+                        "Initial Access"
+                    ]
+                },
+                "id": "9701",
+                "gpg13": [
+                    "7.1",
+                    "7.2"
+                ]
+            },
+            "decoder": {
+                "parent": "dovecot",
+                "name": "dovecot"
+            },
+            "full_log": "Jan 23 12:55:50 mail dovecot: imap-login: Login: user=<ashley.garcia>, method=PLAIN, rip=10.132.56.171, lip=10.132.56.171, mpid=6398, TLS, session=<vjEhXz/WyroKhDir>",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:55:50.000000Z",
+            "location": "/var/log/syslog",
+            "id": "1688763993.10682248"
+        },
+        {
+            "predecoder": {
+                "hostname": "mail",
+                "program_name": "dovecot",
+                "timestamp": "Jan 23 12:55:50"
+            },
+            "agent": {
+                "ip": "10.132.56.171",
+                "name": "wazuh-client",
+                "id": "25"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "Dovecot Authentication Success.",
+                "groups": [
+                    "dovecot",
+                    "authentication_success"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ],
+                "firedtimes": 157,
+                "mitre": {
+                    "technique": [
+                        "Valid Accounts"
+                    ],
+                    "id": [
+                        "T1078"
+                    ],
+                    "tactic": [
+                        "Defense Evasion",
+                        "Persistence",
+                        "Privilege Escalation",
+                        "Initial Access"
+                    ]
+                },
+                "id": "9701",
+                "gpg13": [
+                    "7.1",
+                    "7.2"
+                ]
+            },
+            "decoder": {
+                "parent": "dovecot",
+                "name": "dovecot"
+            },
+            "full_log": "Jan 23 12:55:50 mail dovecot: imap-login: Login: user=<ashley.garcia>, method=PLAIN, rip=10.132.56.171, lip=10.132.56.171, mpid=6398, TLS, session=<vjEhXz/WyroKhDir>",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:55:50.000000Z",
+            "location": "/var/log/mail.info",
+            "id": "1688763993.10681259"
+        },
+        {
+            "predecoder": {
+                "hostname": "mail",
+                "program_name": "dovecot",
+                "timestamp": "Jan 23 12:55:51"
+            },
+            "agent": {
+                "ip": "10.132.56.171",
+                "name": "wazuh-client",
+                "id": "25"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "Dovecot Authentication Success.",
+                "groups": [
+                    "dovecot",
+                    "authentication_success"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ],
+                "firedtimes": 161,
+                "mitre": {
+                    "technique": [
+                        "Valid Accounts"
+                    ],
+                    "id": [
+                        "T1078"
+                    ],
+                    "tactic": [
+                        "Defense Evasion",
+                        "Persistence",
+                        "Privilege Escalation",
+                        "Initial Access"
+                    ]
+                },
+                "id": "9701",
+                "gpg13": [
+                    "7.1",
+                    "7.2"
+                ]
+            },
+            "decoder": {
+                "parent": "dovecot",
+                "name": "dovecot"
+            },
+            "full_log": "Jan 23 12:55:51 mail dovecot: imap-login: Login: user=<ashley.garcia>, method=PLAIN, rip=10.132.56.171, lip=10.132.56.171, mpid=6401, TLS, session=<PAMrXz/WzLoKhDir>",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:55:51.000000Z",
+            "location": "/var/log/mail.log",
+            "id": "1688763995.10683235"
+        },
+        {
+            "predecoder": {
+                "hostname": "mail",
+                "program_name": "dovecot",
+                "timestamp": "Jan 23 12:55:51"
+            },
+            "agent": {
+                "ip": "10.132.56.171",
+                "name": "wazuh-client",
+                "id": "25"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "Dovecot Authentication Success.",
+                "groups": [
+                    "dovecot",
+                    "authentication_success"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ],
+                "firedtimes": 160,
+                "mitre": {
+                    "technique": [
+                        "Valid Accounts"
+                    ],
+                    "id": [
+                        "T1078"
+                    ],
+                    "tactic": [
+                        "Defense Evasion",
+                        "Persistence",
+                        "Privilege Escalation",
+                        "Initial Access"
+                    ]
+                },
+                "id": "9701",
+                "gpg13": [
+                    "7.1",
+                    "7.2"
+                ]
+            },
+            "decoder": {
+                "parent": "dovecot",
+                "name": "dovecot"
+            },
+            "full_log": "Jan 23 12:55:51 mail dovecot: imap-login: Login: user=<ashley.garcia>, method=PLAIN, rip=10.132.56.171, lip=10.132.56.171, mpid=6401, TLS, session=<PAMrXz/WzLoKhDir>",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:55:51.000000Z",
+            "location": "/var/log/mail.info",
+            "id": "1688763995.10682740"
+        },
+        {
+            "predecoder": {
+                "hostname": "mail",
+                "program_name": "dovecot",
+                "timestamp": "Jan 23 12:55:51"
+            },
+            "agent": {
+                "ip": "10.132.56.171",
+                "name": "wazuh-client",
+                "id": "25"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "Dovecot Authentication Success.",
+                "groups": [
+                    "dovecot",
+                    "authentication_success"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ],
+                "firedtimes": 162,
+                "mitre": {
+                    "technique": [
+                        "Valid Accounts"
+                    ],
+                    "id": [
+                        "T1078"
+                    ],
+                    "tactic": [
+                        "Defense Evasion",
+                        "Persistence",
+                        "Privilege Escalation",
+                        "Initial Access"
+                    ]
+                },
+                "id": "9701",
+                "gpg13": [
+                    "7.1",
+                    "7.2"
+                ]
+            },
+            "decoder": {
+                "parent": "dovecot",
+                "name": "dovecot"
+            },
+            "full_log": "Jan 23 12:55:51 mail dovecot: imap-login: Login: user=<ashley.garcia>, method=PLAIN, rip=10.132.56.171, lip=10.132.56.171, mpid=6401, TLS, session=<PAMrXz/WzLoKhDir>",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:55:51.000000Z",
+            "location": "/var/log/syslog",
+            "id": "1688763995.10683729"
+        },
+        {
+            "predecoder": {
+                "hostname": "mail",
+                "program_name": "dovecot",
+                "timestamp": "Jan 23 12:56:09"
+            },
+            "agent": {
+                "ip": "10.132.56.171",
+                "name": "wazuh-client",
+                "id": "25"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "Dovecot Authentication Success.",
+                "groups": [
+                    "dovecot",
+                    "authentication_success"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ],
+                "firedtimes": 163,
+                "mitre": {
+                    "technique": [
+                        "Valid Accounts"
+                    ],
+                    "id": [
+                        "T1078"
+                    ],
+                    "tactic": [
+                        "Defense Evasion",
+                        "Persistence",
+                        "Privilege Escalation",
+                        "Initial Access"
+                    ]
+                },
+                "id": "9701",
+                "gpg13": [
+                    "7.1",
+                    "7.2"
+                ]
+            },
+            "decoder": {
+                "parent": "dovecot",
+                "name": "dovecot"
+            },
+            "full_log": "Jan 23 12:56:09 mail dovecot: imap-login: Login: user=<ashley.garcia>, method=PLAIN, rip=10.132.56.171, lip=10.132.56.171, mpid=6403, TLS, session=<K+JDYD/WzroKhDir>",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:56:09.000000Z",
+            "location": "/var/log/mail.info",
+            "id": "1688764013.10684221"
+        },
+        {
+            "predecoder": {
+                "hostname": "mail",
+                "program_name": "dovecot",
+                "timestamp": "Jan 23 12:56:09"
+            },
+            "agent": {
+                "ip": "10.132.56.171",
+                "name": "wazuh-client",
+                "id": "25"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "Dovecot Authentication Success.",
+                "groups": [
+                    "dovecot",
+                    "authentication_success"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ],
+                "firedtimes": 164,
+                "mitre": {
+                    "technique": [
+                        "Valid Accounts"
+                    ],
+                    "id": [
+                        "T1078"
+                    ],
+                    "tactic": [
+                        "Defense Evasion",
+                        "Persistence",
+                        "Privilege Escalation",
+                        "Initial Access"
+                    ]
+                },
+                "id": "9701",
+                "gpg13": [
+                    "7.1",
+                    "7.2"
+                ]
+            },
+            "decoder": {
+                "parent": "dovecot",
+                "name": "dovecot"
+            },
+            "full_log": "Jan 23 12:56:09 mail dovecot: imap-login: Login: user=<ashley.garcia>, method=PLAIN, rip=10.132.56.171, lip=10.132.56.171, mpid=6403, TLS, session=<K+JDYD/WzroKhDir>",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:56:09.000000Z",
+            "location": "/var/log/mail.log",
+            "id": "1688764013.10684716"
+        },
+        {
+            "predecoder": {
+                "hostname": "mail",
+                "program_name": "dovecot",
+                "timestamp": "Jan 23 12:56:09"
+            },
+            "agent": {
+                "ip": "10.132.56.171",
+                "name": "wazuh-client",
+                "id": "25"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "Dovecot Authentication Success.",
+                "groups": [
+                    "dovecot",
+                    "authentication_success"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ],
+                "firedtimes": 165,
+                "mitre": {
+                    "technique": [
+                        "Valid Accounts"
+                    ],
+                    "id": [
+                        "T1078"
+                    ],
+                    "tactic": [
+                        "Defense Evasion",
+                        "Persistence",
+                        "Privilege Escalation",
+                        "Initial Access"
+                    ]
+                },
+                "id": "9701",
+                "gpg13": [
+                    "7.1",
+                    "7.2"
+                ]
+            },
+            "decoder": {
+                "parent": "dovecot",
+                "name": "dovecot"
+            },
+            "full_log": "Jan 23 12:56:09 mail dovecot: imap-login: Login: user=<ashley.garcia>, method=PLAIN, rip=10.132.56.171, lip=10.132.56.171, mpid=6403, TLS, session=<K+JDYD/WzroKhDir>",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:56:09.000000Z",
+            "location": "/var/log/syslog",
+            "id": "1688764013.10685210"
+        },
+        {
+            "agent": {
+                "ip": "10.132.57.136",
+                "name": "wazuh-client",
+                "id": "17"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "data": {
+                "metadata": {
+                    "flowints": {
+                        "tls": {
+                            "anomaly": {
+                                "count": "2"
+                            }
+                        }
+                    }
+                },
+                "tx_id": "0",
+                "app_proto": "tls",
+                "in_iface": "ens3",
+                "src_ip": "10.132.56.171",
+                "src_port": "443",
+                "event_type": "alert",
+                "alert": {
+                    "severity": "3",
+                    "signature_id": "2230003",
+                    "rev": "1",
+                    "gid": "1",
+                    "signature": "SURICATA TLS invalid handshake message",
+                    "action": "allowed",
+                    "category": "Generic Protocol Command Decode"
+                },
+                "flow_id": "718927334843804.000000",
+                "dest_ip": "10.132.57.136",
+                "proto": "TCP",
+                "tls": {
+                    "version": "UNDETERMINED",
+                    "ja3": {
+                        "string": "771,4866-4867-4865-49196-49200-159-52393-52392-52394-49195-49199-158-49188-49192-107-49187-49191-103-49162-49172-57-49161-49171-51-157-156-61-60-53-47-255,0-11-10-35-22-23-49-13-43-45-51-21,29-23-30-25-24,0-1-2",
+                        "hash": "e0ff89ed9185dfb09184797a4c3f2e1c"
+                    },
+                    "sni": "mail.dmz.hurstwong.wardbeck.info"
+                },
+                "dest_port": "35198",
+                "flow": {
+                    "pkts_toserver": "5",
+                    "start": "2022-01-23T12:56:09.828828+0000",
+                    "bytes_toclient": "496",
+                    "bytes_toserver": "981",
+                    "pkts_toclient": "3"
+                },
+                "timestamp": "2022-01-23T12:56:09.848715+0000"
+            },
+            "rule": {
+                "firedtimes": 5,
+                "mail": false,
+                "level": 3,
+                "description": "Suricata: Alert - SURICATA TLS invalid handshake message",
+                "groups": [
+                    "ids",
+                    "suricata"
+                ],
+                "id": "86601"
+            },
+            "decoder": {
+                "name": "json"
+            },
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:56:09.848715Z",
+            "location": "/var/log/suricata/eve.json",
+            "id": "1688764013.10685702"
+        },
+        {
+            "agent": {
+                "ip": "10.132.57.136",
+                "name": "wazuh-client",
+                "id": "17"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "data": {
+                "metadata": {
+                    "flowints": {
+                        "tls": {
+                            "anomaly": {
+                                "count": "2"
+                            }
+                        }
+                    }
+                },
+                "tx_id": "0",
+                "app_proto": "tls",
+                "in_iface": "ens3",
+                "src_ip": "10.132.56.171",
+                "src_port": "443",
+                "event_type": "alert",
+                "alert": {
+                    "severity": "3",
+                    "signature_id": "2230010",
+                    "rev": "1",
+                    "gid": "1",
+                    "signature": "SURICATA TLS invalid record/traffic",
+                    "action": "allowed",
+                    "category": "Generic Protocol Command Decode"
+                },
+                "flow_id": "718927334843804.000000",
+                "dest_ip": "10.132.57.136",
+                "proto": "TCP",
+                "tls": {
+                    "version": "UNDETERMINED",
+                    "ja3": {
+                        "string": "771,4866-4867-4865-49196-49200-159-52393-52392-52394-49195-49199-158-49188-49192-107-49187-49191-103-49162-49172-57-49161-49171-51-157-156-61-60-53-47-255,0-11-10-35-22-23-49-13-43-45-51-21,29-23-30-25-24,0-1-2",
+                        "hash": "e0ff89ed9185dfb09184797a4c3f2e1c"
+                    },
+                    "sni": "mail.dmz.hurstwong.wardbeck.info"
+                },
+                "dest_port": "35198",
+                "flow": {
+                    "pkts_toserver": "5",
+                    "start": "2022-01-23T12:56:09.828828+0000",
+                    "bytes_toclient": "496",
+                    "bytes_toserver": "981",
+                    "pkts_toclient": "3"
+                },
+                "timestamp": "2022-01-23T12:56:09.848715+0000"
+            },
+            "rule": {
+                "firedtimes": 6,
+                "mail": false,
+                "level": 3,
+                "description": "Suricata: Alert - SURICATA TLS invalid record/traffic",
+                "groups": [
+                    "ids",
+                    "suricata"
+                ],
+                "id": "86601"
+            },
+            "decoder": {
+                "name": "json"
+            },
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:56:09.848715Z",
+            "location": "/var/log/suricata/eve.json",
+            "id": "1688764013.10687810"
+        },
+        {
+            "predecoder": {
+                "timestamp": "01/23/2022-12:56:09.848715"
+            },
+            "agent": {
+                "ip": "10.132.57.136",
+                "name": "wazuh-client",
+                "id": "17"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "data": {
+                "srcip": "10.132.56.171",
+                "dstip": "10.132.57.136:35198",
+                "id": "1:2230010:1"
+            },
+            "rule": {
+                "firedtimes": 1,
+                "mail": false,
+                "level": 8,
+                "description": "First time this IDS alert is generated.",
+                "groups": [
+                    "ids",
+                    "fts"
+                ],
+                "id": "20100"
+            },
+            "decoder": {
+                "parent": "snort",
+                "name": "snort"
+            },
+            "full_log": "01/23/2022-12:56:09.848715  [**] [1:2230010:1] SURICATA TLS invalid record/traffic [**] [Classification: Generic Protocol Command Decode] [Priority: 3] {TCP} 10.132.56.171:443 -> 10.132.57.136:35198",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:56:09.848715Z",
+            "location": "/var/log/suricata/fast.log",
+            "id": "1688764013.10694120"
+        },
+        {
+            "predecoder": {
+                "timestamp": "01/23/2022-12:56:09.848715"
+            },
+            "agent": {
+                "ip": "10.132.57.136",
+                "name": "wazuh-client",
+                "id": "17"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "data": {
+                "srcip": "10.132.56.171",
+                "dstip": "10.132.57.136:35198",
+                "id": "1:2230003:1"
+            },
+            "rule": {
+                "firedtimes": 5,
+                "mail": false,
+                "level": 6,
+                "description": "IDS event.",
+                "groups": [
+                    "ids"
+                ],
+                "id": "20101"
+            },
+            "decoder": {
+                "parent": "snort",
+                "name": "snort"
+            },
+            "full_log": "01/23/2022-12:56:09.848715  [**] [1:2230003:1] SURICATA TLS invalid handshake message [**] [Classification: Generic Protocol Command Decode] [Priority: 3] {TCP} 10.132.56.171:443 -> 10.132.57.136:35198",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:56:09.848715Z",
+            "location": "/var/log/suricata/fast.log",
+            "id": "1688764013.10694568"
+        },
+        {
+            "agent": {
+                "ip": "10.132.57.136",
+                "name": "wazuh-client",
+                "id": "17"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "data": {
+                "metadata": {
+                    "flowints": {
+                        "tls": {
+                            "anomaly": {
+                                "count": "4"
+                            }
+                        }
+                    }
+                },
+                "tx_id": "0",
+                "app_proto": "tls",
+                "in_iface": "ens3",
+                "src_ip": "10.132.57.136",
+                "src_port": "35198",
+                "event_type": "alert",
+                "alert": {
+                    "severity": "3",
+                    "signature_id": "2230003",
+                    "rev": "1",
+                    "gid": "1",
+                    "signature": "SURICATA TLS invalid handshake message",
+                    "action": "allowed",
+                    "category": "Generic Protocol Command Decode"
+                },
+                "flow_id": "718927334843804.000000",
+                "dest_ip": "10.132.56.171",
+                "proto": "TCP",
+                "tls": {
+                    "version": "UNDETERMINED",
+                    "ja3": {
+                        "string": "771,4866-4867-4865-49196-49200-159-52393-52392-52394-49195-49199-158-49188-49192-107-49187-49191-103-49162-49172-57-49161-49171-51-157-156-61-60-53-47-255,0-11-10-35-22-23-49-13-43-45-51-21,29-23-30-25-24,0-1-2",
+                        "hash": "e0ff89ed9185dfb09184797a4c3f2e1c"
+                    },
+                    "sni": "mail.dmz.hurstwong.wardbeck.info"
+                },
+                "dest_port": "443",
+                "flow": {
+                    "pkts_toserver": "6",
+                    "start": "2022-01-23T12:56:09.828828+0000",
+                    "bytes_toclient": "496",
+                    "bytes_toserver": "2317",
+                    "pkts_toclient": "3"
+                },
+                "timestamp": "2022-01-23T12:56:09.848951+0000"
+            },
+            "rule": {
+                "firedtimes": 7,
+                "mail": false,
+                "level": 3,
+                "description": "Suricata: Alert - SURICATA TLS invalid handshake message",
+                "groups": [
+                    "ids",
+                    "suricata"
+                ],
+                "id": "86601"
+            },
+            "decoder": {
+                "name": "json"
+            },
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:56:09.848951Z",
+            "location": "/var/log/suricata/eve.json",
+            "id": "1688764013.10689909"
+        },
+        {
+            "agent": {
+                "ip": "10.132.57.136",
+                "name": "wazuh-client",
+                "id": "17"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "data": {
+                "metadata": {
+                    "flowints": {
+                        "tls": {
+                            "anomaly": {
+                                "count": "4"
+                            }
+                        }
+                    }
+                },
+                "tx_id": "0",
+                "app_proto": "tls",
+                "in_iface": "ens3",
+                "src_ip": "10.132.57.136",
+                "src_port": "35198",
+                "event_type": "alert",
+                "alert": {
+                    "severity": "3",
+                    "signature_id": "2230010",
+                    "rev": "1",
+                    "gid": "1",
+                    "signature": "SURICATA TLS invalid record/traffic",
+                    "action": "allowed",
+                    "category": "Generic Protocol Command Decode"
+                },
+                "flow_id": "718927334843804.000000",
+                "dest_ip": "10.132.56.171",
+                "proto": "TCP",
+                "tls": {
+                    "version": "UNDETERMINED",
+                    "ja3": {
+                        "string": "771,4866-4867-4865-49196-49200-159-52393-52392-52394-49195-49199-158-49188-49192-107-49187-49191-103-49162-49172-57-49161-49171-51-157-156-61-60-53-47-255,0-11-10-35-22-23-49-13-43-45-51-21,29-23-30-25-24,0-1-2",
+                        "hash": "e0ff89ed9185dfb09184797a4c3f2e1c"
+                    },
+                    "sni": "mail.dmz.hurstwong.wardbeck.info"
+                },
+                "dest_port": "443",
+                "flow": {
+                    "pkts_toserver": "6",
+                    "start": "2022-01-23T12:56:09.828828+0000",
+                    "bytes_toclient": "496",
+                    "bytes_toserver": "2317",
+                    "pkts_toclient": "3"
+                },
+                "timestamp": "2022-01-23T12:56:09.848951+0000"
+            },
+            "rule": {
+                "firedtimes": 8,
+                "mail": false,
+                "level": 3,
+                "description": "Suricata: Alert - SURICATA TLS invalid record/traffic",
+                "groups": [
+                    "ids",
+                    "suricata"
+                ],
+                "id": "86601"
+            },
+            "decoder": {
+                "name": "json"
+            },
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:56:09.848951Z",
+            "location": "/var/log/suricata/eve.json",
+            "id": "1688764013.10692019"
+        },
+        {
+            "predecoder": {
+                "timestamp": "01/23/2022-12:56:09.848951"
+            },
+            "agent": {
+                "ip": "10.132.57.136",
+                "name": "wazuh-client",
+                "id": "17"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "data": {
+                "srcip": "10.132.57.136",
+                "dstip": "10.132.56.171:443",
+                "id": "1:2230003:1"
+            },
+            "rule": {
+                "firedtimes": 6,
+                "mail": false,
+                "level": 6,
+                "description": "IDS event.",
+                "groups": [
+                    "ids"
+                ],
+                "id": "20101"
+            },
+            "decoder": {
+                "parent": "snort",
+                "name": "snort"
+            },
+            "full_log": "01/23/2022-12:56:09.848951  [**] [1:2230003:1] SURICATA TLS invalid handshake message [**] [Classification: Generic Protocol Command Decode] [Priority: 3] {TCP} 10.132.57.136:35198 -> 10.132.56.171:443",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:56:09.848951Z",
+            "location": "/var/log/suricata/fast.log",
+            "id": "1688764013.10694986"
+        },
+        {
+            "predecoder": {
+                "timestamp": "01/23/2022-12:56:09.848951"
+            },
+            "agent": {
+                "ip": "10.132.57.136",
+                "name": "wazuh-client",
+                "id": "17"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "data": {
+                "srcip": "10.132.57.136",
+                "dstip": "10.132.56.171:443",
+                "id": "1:2230010:1"
+            },
+            "rule": {
+                "firedtimes": 7,
+                "mail": false,
+                "level": 6,
+                "description": "IDS event.",
+                "groups": [
+                    "ids"
+                ],
+                "id": "20101"
+            },
+            "decoder": {
+                "parent": "snort",
+                "name": "snort"
+            },
+            "full_log": "01/23/2022-12:56:09.848951  [**] [1:2230010:1] SURICATA TLS invalid record/traffic [**] [Classification: Generic Protocol Command Decode] [Priority: 3] {TCP} 10.132.57.136:35198 -> 10.132.56.171:443",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:56:09.848951Z",
+            "location": "/var/log/suricata/fast.log",
+            "id": "1688764013.10695402"
+        },
+        {
+            "predecoder": {
+                "hostname": "mail",
+                "program_name": "dovecot",
+                "timestamp": "Jan 23 12:56:18"
+            },
+            "agent": {
+                "ip": "10.132.56.171",
+                "name": "wazuh-client",
+                "id": "25"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "Dovecot Authentication Success.",
+                "groups": [
+                    "dovecot",
+                    "authentication_success"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ],
+                "firedtimes": 166,
+                "mitre": {
+                    "technique": [
+                        "Valid Accounts"
+                    ],
+                    "id": [
+                        "T1078"
+                    ],
+                    "tactic": [
+                        "Defense Evasion",
+                        "Persistence",
+                        "Privilege Escalation",
+                        "Initial Access"
+                    ]
+                },
+                "id": "9701",
+                "gpg13": [
+                    "7.1",
+                    "7.2"
+                ]
+            },
+            "decoder": {
+                "parent": "dovecot",
+                "name": "dovecot"
+            },
+            "full_log": "Jan 23 12:56:18 mail dovecot: imap-login: Login: user=<ashley.garcia>, method=PLAIN, rip=10.132.56.171, lip=10.132.56.171, mpid=6405, TLS, session=<yLTNYD/W0LoKhDir>",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:56:18.000000Z",
+            "location": "/var/log/mail.info",
+            "id": "1688764021.10695815"
+        },
+        {
+            "predecoder": {
+                "hostname": "mail",
+                "program_name": "dovecot",
+                "timestamp": "Jan 23 12:56:18"
+            },
+            "agent": {
+                "ip": "10.132.56.171",
+                "name": "wazuh-client",
+                "id": "25"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "Dovecot Authentication Success.",
+                "groups": [
+                    "dovecot",
+                    "authentication_success"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ],
+                "firedtimes": 167,
+                "mitre": {
+                    "technique": [
+                        "Valid Accounts"
+                    ],
+                    "id": [
+                        "T1078"
+                    ],
+                    "tactic": [
+                        "Defense Evasion",
+                        "Persistence",
+                        "Privilege Escalation",
+                        "Initial Access"
+                    ]
+                },
+                "id": "9701",
+                "gpg13": [
+                    "7.1",
+                    "7.2"
+                ]
+            },
+            "decoder": {
+                "parent": "dovecot",
+                "name": "dovecot"
+            },
+            "full_log": "Jan 23 12:56:18 mail dovecot: imap-login: Login: user=<ashley.garcia>, method=PLAIN, rip=10.132.56.171, lip=10.132.56.171, mpid=6405, TLS, session=<yLTNYD/W0LoKhDir>",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:56:18.000000Z",
+            "location": "/var/log/mail.log",
+            "id": "1688764021.10696310"
+        },
+        {
+            "predecoder": {
+                "hostname": "mail",
+                "program_name": "dovecot",
+                "timestamp": "Jan 23 12:56:18"
+            },
+            "agent": {
+                "ip": "10.132.56.171",
+                "name": "wazuh-client",
+                "id": "25"
+            },
+            "manager": {
+                "name": "wazuh.manager"
+            },
+            "rule": {
+                "mail": false,
+                "level": 3,
+                "pci_dss": [
+                    "10.2.5"
+                ],
+                "hipaa": [
+                    "164.312.b"
+                ],
+                "tsc": [
+                    "CC6.8",
+                    "CC7.2",
+                    "CC7.3"
+                ],
+                "description": "Dovecot Authentication Success.",
+                "groups": [
+                    "dovecot",
+                    "authentication_success"
+                ],
+                "nist_800_53": [
+                    "AU.14",
+                    "AC.7"
+                ],
+                "gdpr": [
+                    "IV_32.2"
+                ],
+                "firedtimes": 168,
+                "mitre": {
+                    "technique": [
+                        "Valid Accounts"
+                    ],
+                    "id": [
+                        "T1078"
+                    ],
+                    "tactic": [
+                        "Defense Evasion",
+                        "Persistence",
+                        "Privilege Escalation",
+                        "Initial Access"
+                    ]
+                },
+                "id": "9701",
+                "gpg13": [
+                    "7.1",
+                    "7.2"
+                ]
+            },
+            "decoder": {
+                "parent": "dovecot",
+                "name": "dovecot"
+            },
+            "full_log": "Jan 23 12:56:18 mail dovecot: imap-login: Login: user=<ashley.garcia>, method=PLAIN, rip=10.132.56.171, lip=10.132.56.171, mpid=6405, TLS, session=<yLTNYD/W0LoKhDir>",
+            "input": {
+                "type": "log"
+            },
+            "@timestamp": "2022-01-23T12:56:18.000000Z",
+            "location": "/var/log/syslog",
+            "id": "1688764021.10696804"
+        }
+    ],
+    "aminer_logs": [
+        {
+            "AnalysisComponent": {
+                "AnalysisComponentIdentifier": 3,
+                "AnalysisComponentType": "NewMatchPathDetector",
+                "AnalysisComponentName": "AMiner: New event type.",
+                "Message": "New path(es) detected",
+                "PersistenceFileName": "nmpd",
+                "TrainingMode": false,
+                "AffectedLogAtomPaths": [
+                    "/model/service/su",
+                    "/model/service/su/systemd_str",
+                    "/model/service/su/id",
+                    "/model/service/su/brack_str2",
+                    "/model/service/su/fm/seq",
+                    "/model/service/su/fm/seq/brack_str",
+                    "/model/service/su/fm/seq/user",
+                    "/model/service/su/fm/seq/by_str",
+                    "/model/service/su/fm/seq/su_user"
+                ]
+            },
+            "LogData": {
+                "RawLogData": [
+                    "Jan 23 12:55:01 intranet-server su[28708]: Successful su for blord by www-data"
+                ],
+                "Timestamps": [
+                    1642942501
+                ],
+                "DetectionTimestamp": [
+                    1642942501
+                ],
+                "LogLinesCount": 1,
+                "LogResources": [
+                    "/var/log/auth.log"
+                ]
+            },
+            "AMiner": {
+                "ID": "172.21.241.88"
+            }
+        },
+        {
+            "AnalysisComponent": {
+                "AnalysisComponentIdentifier": 3,
+                "AnalysisComponentType": "NewMatchPathDetector",
+                "AnalysisComponentName": "AMiner: New event type.",
+                "Message": "New path(es) detected",
+                "PersistenceFileName": "nmpd",
+                "TrainingMode": false,
+                "AffectedLogAtomPaths": [
+                    "/model/service/su",
+                    "/model/service/su/systemd_str",
+                    "/model/service/su/id",
+                    "/model/service/su/brack_str2",
+                    "/model/service/su/fm/seq2",
+                    "/model/service/su/fm/seq2/plus",
+                    "/model/service/su/fm/seq2/msg"
+                ]
+            },
+            "LogData": {
+                "RawLogData": [
+                    "Jan 23 12:55:01 intranet-server su[28708]: + /dev/pts/1 www-data:blord"
+                ],
+                "Timestamps": [
+                    1642942501
+                ],
+                "DetectionTimestamp": [
+                    1642942501
+                ],
+                "LogLinesCount": 1,
+                "LogResources": [
+                    "/var/log/auth.log"
+                ]
+            },
+            "AMiner": {
+                "ID": "172.21.241.88"
+            }
+        },
+        {
+            "AnalysisComponent": {
+                "AnalysisComponentIdentifier": 3,
+                "AnalysisComponentType": "NewMatchPathDetector",
+                "AnalysisComponentName": "AMiner: New event type.",
+                "Message": "New path(es) detected",
+                "PersistenceFileName": "nmpd",
+                "TrainingMode": false,
+                "AffectedLogAtomPaths": [
+                    "/model/service/su",
+                    "/model/service/su/systemd_str",
+                    "/model/service/su/id",
+                    "/model/service/su/brack_str2",
+                    "/model/service/su/fm/seq",
+                    "/model/service/su/fm/seq/brack_str",
+                    "/model/service/su/fm/seq/name",
+                    "/model/service/su/fm/seq/session_str",
+                    "/model/service/su/fm/seq/status",
+                    "/model/service/su/fm/seq/user_str",
+                    "/model/service/su/fm/seq/user",
+                    "/model/service/su/fm/seq/uid",
+                    "/model/service/su/fm/seq/uid/uid",
+                    "/model/service/su/fm/seq/uid/uid/uid_str",
+                    "/model/service/su/fm/seq/uid/uid/uid",
+                    "/model/service/su/fm/seq/uid/uid/brack_str"
+                ]
+            },
+            "LogData": {
+                "RawLogData": [
+                    "Jan 23 12:55:01 intranet-server su[28708]: pam_unix(su:session): session opened for user blord by (uid=33)"
+                ],
+                "Timestamps": [
+                    1642942501
+                ],
+                "DetectionTimestamp": [
+                    1642942501
+                ],
+                "LogLinesCount": 1,
+                "LogResources": [
+                    "/var/log/auth.log"
+                ]
+            },
+            "AMiner": {
+                "ID": "172.21.241.88"
+            }
+        },
+        {
+            "AnalysisComponent": {
+                "AnalysisComponentIdentifier": 20,
+                "AnalysisComponentType": "NewMatchPathValueComboDetector",
+                "AnalysisComponentName": "AMiner: New user_auth parameter combination in Audit logs.",
+                "Message": "New value combination(s) detected",
+                "PersistenceFileName": "nmpvcd_user_auth",
+                "TrainingMode": false,
+                "AffectedLogAtomPaths": [
+                    "/model/type/user_auth/uid",
+                    "/model/type/user_auth/msg2",
+                    "/model/type/user_auth/fm/acct/acct",
+                    "/model/type/user_auth/opt/opt_seq/exe"
+                ],
+                "AffectedLogAtomValues": [
+                    "33",
+                    "'op=PAM:authentication",
+                    "\"blord\"",
+                    "\"/bin/su\""
+                ]
+            },
+            "LogData": {
+                "RawLogData": [
+                    "type=USER_AUTH msg=audit(1642942501.083:2976): pid=28708 uid=33 auid=4294967295 ses=4294967295 msg='op=PAM:authentication acct=\"blord\" exe=\"/bin/su\" hostname=? addr=? terminal=/dev/pts/1 res=success'"
+                ],
+                "Timestamps": [
+                    1642942501.08
+                ],
+                "DetectionTimestamp": [
+                    1642942501.08
+                ],
+                "LogLinesCount": 1,
+                "LogResources": [
+                    "/var/log/audit/audit.log"
+                ]
+            },
+            "AMiner": {
+                "ID": "172.21.241.88"
+            }
+        },
+        {
+            "AnalysisComponent": {
+                "AnalysisComponentIdentifier": 19,
+                "AnalysisComponentType": "NewMatchPathValueComboDetector",
+                "AnalysisComponentName": "AMiner: New user_acct parameter combination in Audit logs.",
+                "Message": "New value combination(s) detected",
+                "PersistenceFileName": "nmpvcd_user_acct",
+                "TrainingMode": false,
+                "AffectedLogAtomPaths": [
+                    "/model/type/user_acct/uid",
+                    "/model/type/user_acct/msg2",
+                    "/model/type/user_acct/fm/acct/acct",
+                    "/model/type/user_acct/opt/opt_seq/exe"
+                ],
+                "AffectedLogAtomValues": [
+                    "33",
+                    "'op=PAM:accounting",
+                    "\"blord\"",
+                    "\"/bin/su\""
+                ]
+            },
+            "LogData": {
+                "RawLogData": [
+                    "type=USER_ACCT msg=audit(1642942501.087:2977): pid=28708 uid=33 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct=\"blord\" exe=\"/bin/su\" hostname=? addr=? terminal=/dev/pts/1 res=success'"
+                ],
+                "Timestamps": [
+                    1642942501.09
+                ],
+                "DetectionTimestamp": [
+                    1642942501.09
+                ],
+                "LogLinesCount": 1,
+                "LogResources": [
+                    "/var/log/audit/audit.log"
+                ]
+            },
+            "AMiner": {
+                "ID": "172.21.241.88"
+            }
+        },
+        {
+            "AnalysisComponent": {
+                "AnalysisComponentIdentifier": 25,
+                "AnalysisComponentType": "NewMatchPathValueComboDetector",
+                "AnalysisComponentName": "AMiner: New cred_acq parameter combination in Audit logs.",
+                "Message": "New value combination(s) detected",
+                "PersistenceFileName": "nmpvcd_cred_acq",
+                "TrainingMode": false,
+                "AffectedLogAtomPaths": [
+                    "/model/type/cred_acq/uid",
+                    "/model/type/cred_acq/msg2",
+                    "/model/type/cred_acq/fm/acct/acct",
+                    "/model/type/cred_acq/opt/opt_seq/exe"
+                ],
+                "AffectedLogAtomValues": [
+                    "33",
+                    "'op=PAM:setcred",
+                    "\"blord\"",
+                    "\"/bin/su\""
+                ]
+            },
+            "LogData": {
+                "RawLogData": [
+                    "type=CRED_ACQ msg=audit(1642942501.091:2978): pid=28708 uid=33 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct=\"blord\" exe=\"/bin/su\" hostname=? addr=? terminal=/dev/pts/1 res=success'"
+                ],
+                "Timestamps": [
+                    1642942501.09
+                ],
+                "DetectionTimestamp": [
+                    1642942501.09
+                ],
+                "LogLinesCount": 1,
+                "LogResources": [
+                    "/var/log/audit/audit.log"
+                ]
+            },
+            "AMiner": {
+                "ID": "172.21.241.88"
+            }
+        },
+        {
+            "AnalysisComponent": {
+                "AnalysisComponentIdentifier": 18,
+                "AnalysisComponentType": "NewMatchPathValueComboDetector",
+                "AnalysisComponentName": "AMiner: New user_start parameter combination in Audit logs.",
+                "Message": "New value combination(s) detected",
+                "PersistenceFileName": "nmpvcd_user_start",
+                "TrainingMode": false,
+                "AffectedLogAtomPaths": [
+                    "/model/type/user_start/uid",
+                    "/model/type/user_start/msg2",
+                    "/model/type/user_start/fm/acct/acct",
+                    "/model/type/user_start/opt/opt_seq/exe"
+                ],
+                "AffectedLogAtomValues": [
+                    "33",
+                    "'op=PAM:session_open",
+                    "\"blord\"",
+                    "\"/bin/su\""
+                ]
+            },
+            "LogData": {
+                "RawLogData": [
+                    "type=USER_START msg=audit(1642942501.359:2984): pid=28708 uid=33 auid=4294967295 ses=4294967295 msg='op=PAM:session_open acct=\"blord\" exe=\"/bin/su\" hostname=? addr=? terminal=/dev/pts/1 res=success'"
+                ],
+                "Timestamps": [
+                    1642942501.36
+                ],
+                "DetectionTimestamp": [
+                    1642942501.36
+                ],
+                "LogLinesCount": 1,
+                "LogResources": [
+                    "/var/log/audit/audit.log"
+                ]
+            },
+            "AMiner": {
+                "ID": "172.21.241.88"
+            }
+        },
+        {
+            "AnalysisComponent": {
+                "AnalysisComponentIdentifier": 3,
+                "AnalysisComponentType": "NewMatchPathDetector",
+                "AnalysisComponentName": "AMiner: New event type.",
+                "Message": "New path(es) detected",
+                "PersistenceFileName": "nmpd",
+                "TrainingMode": false,
+                "AffectedLogAtomPaths": [
+                    "/model/service/sudo",
+                    "/model/service/sudo/cron_str",
+                    "/model/service/sudo/msg"
+                ]
+            },
+            "LogData": {
+                "RawLogData": [
+                    "Jan 23 12:55:14 intranet-server sudo:    blord : TTY=pts/1 ; PWD=/var/www/intranet.hurstwong.wardbeck.info/wp-content/uploads/2022/01 ; USER=root ; COMMAND=list"
+                ],
+                "Timestamps": [
+                    1642942514
+                ],
+                "DetectionTimestamp": [
+                    1642942514
+                ],
+                "LogLinesCount": 1,
+                "LogResources": [
+                    "/var/log/auth.log"
+                ]
+            },
+            "AMiner": {
+                "ID": "172.21.241.88"
+            }
+        },
+        {
+            "AnalysisComponent": {
+                "AnalysisComponentIdentifier": 3,
+                "AnalysisComponentType": "NewMatchPathDetector",
+                "AnalysisComponentName": "AMiner: New event type.",
+                "Message": "New path(es) detected",
+                "PersistenceFileName": "nmpd",
+                "TrainingMode": false,
+                "AffectedLogAtomPaths": [
+                    "/model/service/sudo",
+                    "/model/service/sudo/cron_str",
+                    "/model/service/sudo/msg"
+                ]
+            },
+            "LogData": {
+                "RawLogData": [
+                    "Jan 23 12:55:15 intranet-server sudo:    blord : TTY=pts/1 ; PWD=/var/www/intranet.hurstwong.wardbeck.info/wp-content/uploads/2022/01 ; USER=root ; COMMAND=/bin/cat /etc/shadow"
+                ],
+                "Timestamps": [
+                    1642942515
+                ],
+                "DetectionTimestamp": [
+                    1642942515
+                ],
+                "LogLinesCount": 1,
+                "LogResources": [
+                    "/var/log/auth.log"
+                ]
+            },
+            "AMiner": {
+                "ID": "172.21.241.88"
+            }
+        },
+        {
+            "AnalysisComponent": {
+                "AnalysisComponentIdentifier": 3,
+                "AnalysisComponentType": "NewMatchPathDetector",
+                "AnalysisComponentName": "AMiner: New event type.",
+                "Message": "New path(es) detected",
+                "PersistenceFileName": "nmpd",
+                "TrainingMode": false,
+                "AffectedLogAtomPaths": [
+                    "/model/service/sudo",
+                    "/model/service/sudo/cron_str",
+                    "/model/service/sudo/msg"
+                ]
+            },
+            "LogData": {
+                "RawLogData": [
+                    "Jan 23 12:55:15 intranet-server sudo: pam_unix(sudo:session): session opened for user root by (uid=0)"
+                ],
+                "Timestamps": [
+                    1642942515
+                ],
+                "DetectionTimestamp": [
+                    1642942515
+                ],
+                "LogLinesCount": 1,
+                "LogResources": [
+                    "/var/log/auth.log"
+                ]
+            },
+            "AMiner": {
+                "ID": "172.21.241.88"
+            }
+        },
+        {
+            "AnalysisComponent": {
+                "AnalysisComponentIdentifier": 3,
+                "AnalysisComponentType": "NewMatchPathDetector",
+                "AnalysisComponentName": "AMiner: New event type.",
+                "Message": "New path(es) detected",
+                "PersistenceFileName": "nmpd",
+                "TrainingMode": false,
+                "AffectedLogAtomPaths": [
+                    "/model/type/user_cmd",
+                    "/model/type/user_cmd/msg1_str",
+                    "/model/type/user_cmd/audit_str",
+                    "/model/type/user_cmd/time",
+                    "/model/type/user_cmd/colon_str",
+                    "/model/type/user_cmd/id",
+                    "/model/type/user_cmd/pid_str",
+                    "/model/type/user_cmd/pid",
+                    "/model/type/user_cmd/uid_str",
+                    "/model/type/user_cmd/uid",
+                    "/model/type/user_cmd/auid_str",
+                    "/model/type/user_cmd/auid",
+                    "/model/type/user_cmd/ses_str",
+                    "/model/type/user_cmd/ses",
+                    "/model/type/user_cmd/msg2_str",
+                    "/model/type/user_cmd/msg2",
+                    "/model/type/user_cmd/fm/cmd",
+                    "/model/type/user_cmd/opt",
+                    "/model/type/user_cmd/terminal_str",
+                    "/model/type/user_cmd/terminal",
+                    "/model/type/user_cmd/res_str",
+                    "/model/type/user_cmd/res",
+                    "/model/type/user_cmd/fm/cmd/cmd_str",
+                    "/model/type/user_cmd/fm/cmd/cmd"
+                ]
+            },
+            "LogData": {
+                "RawLogData": [
+                    "type=USER_CMD msg=audit(1642942515.991:2985): pid=28732 uid=1001 auid=4294967295 ses=4294967295 msg='cwd=\"/var/www/intranet.hurstwong.wardbeck.info/wp-content/uploads/2022/01\" cmd=636174202F6574632F736861646F77 terminal=pts/1 res=success'"
+                ],
+                "Timestamps": [
+                    1642942515.99
+                ],
+                "DetectionTimestamp": [
+                    1642942515.99
+                ],
+                "LogLinesCount": 1,
+                "LogResources": [
+                    "/var/log/audit/audit.log"
+                ]
+            },
+            "AMiner": {
+                "ID": "172.21.241.88"
+            }
+        },
+        {
+            "AnalysisComponent": {
+                "AnalysisComponentIdentifier": 24,
+                "AnalysisComponentType": "NewMatchPathValueComboDetector",
+                "AnalysisComponentName": "AMiner: New user_cmd parameter combination in Audit logs.",
+                "Message": "New value combination(s) detected",
+                "PersistenceFileName": "nmpvcd_user_cmd",
+                "TrainingMode": false,
+                "AffectedLogAtomPaths": [
+                    "/model/type/user_cmd/uid"
+                ],
+                "AffectedLogAtomValues": [
+                    "1001"
+                ]
+            },
+            "LogData": {
+                "RawLogData": [
+                    "type=USER_CMD msg=audit(1642942515.991:2985): pid=28732 uid=1001 auid=4294967295 ses=4294967295 msg='cwd=\"/var/www/intranet.hurstwong.wardbeck.info/wp-content/uploads/2022/01\" cmd=636174202F6574632F736861646F77 terminal=pts/1 res=success'"
+                ],
+                "Timestamps": [
+                    1642942515.99
+                ],
+                "DetectionTimestamp": [
+                    1642942515.99
+                ],
+                "LogLinesCount": 1,
+                "LogResources": [
+                    "/var/log/audit/audit.log"
+                ]
+            },
+            "AMiner": {
+                "ID": "172.21.241.88"
+            }
+        },
+        {
+            "AnalysisComponent": {
+                "AnalysisComponentIdentifier": 3,
+                "AnalysisComponentType": "NewMatchPathDetector",
+                "AnalysisComponentName": "AMiner: New event type.",
+                "Message": "New path(es) detected",
+                "PersistenceFileName": "nmpd",
+                "TrainingMode": false,
+                "AffectedLogAtomPaths": [
+                    "/model/type/cred_refr",
+                    "/model/type/cred_refr/msg1_str",
+                    "/model/type/cred_refr/audit_str",
+                    "/model/type/cred_refr/time",
+                    "/model/type/cred_refr/colon_str",
+                    "/model/type/cred_refr/id",
+                    "/model/type/cred_refr/pid_str",
+                    "/model/type/cred_refr/pid",
+                    "/model/type/cred_refr/uid_str",
+                    "/model/type/cred_refr/uid",
+                    "/model/type/cred_refr/auid_str",
+                    "/model/type/cred_refr/auid",
+                    "/model/type/cred_refr/ses_str",
+                    "/model/type/cred_refr/ses",
+                    "/model/type/cred_refr/msg2_str",
+                    "/model/type/cred_refr/msg2",
+                    "/model/type/cred_refr/fm/acct",
+                    "/model/type/cred_refr/opt",
+                    "/model/type/cred_refr/terminal_str",
+                    "/model/type/cred_refr/terminal",
+                    "/model/type/cred_refr/res_str",
+                    "/model/type/cred_refr/res",
+                    "/model/type/cred_refr/opt/opt_seq",
+                    "/model/type/cred_refr/opt/opt_seq/exe_str",
+                    "/model/type/cred_refr/opt/opt_seq/exe",
+                    "/model/type/cred_refr/opt/opt_seq/hostname_str",
+                    "/model/type/cred_refr/opt/opt_seq/hostname",
+                    "/model/type/cred_refr/opt/opt_seq/addr_str",
+                    "/model/type/cred_refr/opt/opt_seq/addr",
+                    "/model/type/cred_refr/fm/acct/acct_str",
+                    "/model/type/cred_refr/fm/acct/acct"
+                ]
+            },
+            "LogData": {
+                "RawLogData": [
+                    "type=CRED_REFR msg=audit(1642942515.995:2986): pid=28732 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct=\"root\" exe=\"/usr/bin/sudo\" hostname=? addr=? terminal=/dev/pts/1 res=success'"
+                ],
+                "Timestamps": [
+                    1642942515.99
+                ],
+                "DetectionTimestamp": [
+                    1642942515.99
+                ],
+                "LogLinesCount": 1,
+                "LogResources": [
+                    "/var/log/audit/audit.log"
+                ]
+            },
+            "AMiner": {
+                "ID": "172.21.241.88"
+            }
+        },
+        {
+            "AnalysisComponent": {
+                "AnalysisComponentIdentifier": 17,
+                "AnalysisComponentType": "NewMatchPathValueComboDetector",
+                "AnalysisComponentName": "AMiner: New cred_refr parameter combination in Audit logs.",
+                "Message": "New value combination(s) detected",
+                "PersistenceFileName": "nmpvcd_cred_refr",
+                "TrainingMode": false,
+                "AffectedLogAtomPaths": [
+                    "/model/type/cred_refr/uid",
+                    "/model/type/cred_refr/msg2",
+                    "/model/type/cred_refr/fm/acct/acct",
+                    "/model/type/cred_refr/opt/opt_seq/exe"
+                ],
+                "AffectedLogAtomValues": [
+                    "0",
+                    "'op=PAM:setcred",
+                    "\"root\"",
+                    "\"/usr/bin/sudo\""
+                ]
+            },
+            "LogData": {
+                "RawLogData": [
+                    "type=CRED_REFR msg=audit(1642942515.995:2986): pid=28732 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct=\"root\" exe=\"/usr/bin/sudo\" hostname=? addr=? terminal=/dev/pts/1 res=success'"
+                ],
+                "Timestamps": [
+                    1642942515.99
+                ],
+                "DetectionTimestamp": [
+                    1642942515.99
+                ],
+                "LogLinesCount": 1,
+                "LogResources": [
+                    "/var/log/audit/audit.log"
+                ]
+            },
+            "AMiner": {
+                "ID": "172.21.241.88"
+            }
+        },
+        {
+            "AnalysisComponent": {
+                "AnalysisComponentIdentifier": 18,
+                "AnalysisComponentType": "NewMatchPathValueComboDetector",
+                "AnalysisComponentName": "AMiner: New user_start parameter combination in Audit logs.",
+                "Message": "New value combination(s) detected",
+                "PersistenceFileName": "nmpvcd_user_start",
+                "TrainingMode": false,
+                "AffectedLogAtomPaths": [
+                    "/model/type/user_start/uid",
+                    "/model/type/user_start/msg2",
+                    "/model/type/user_start/fm/acct/acct",
+                    "/model/type/user_start/opt/opt_seq/exe"
+                ],
+                "AffectedLogAtomValues": [
+                    "0",
+                    "'op=PAM:session_open",
+                    "\"root\"",
+                    "\"/usr/bin/sudo\""
+                ]
+            },
+            "LogData": {
+                "RawLogData": [
+                    "type=USER_START msg=audit(1642942515.995:2987): pid=28732 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:session_open acct=\"root\" exe=\"/usr/bin/sudo\" hostname=? addr=? terminal=/dev/pts/1 res=success'"
+                ],
+                "Timestamps": [
+                    1642942515.99
+                ],
+                "DetectionTimestamp": [
+                    1642942515.99
+                ],
+                "LogLinesCount": 1,
+                "LogResources": [
+                    "/var/log/audit/audit.log"
+                ]
+            },
+            "AMiner": {
+                "ID": "172.21.241.88"
+            }
+        },
+        {
+            "AnalysisComponent": {
+                "AnalysisComponentIdentifier": 3,
+                "AnalysisComponentType": "NewMatchPathDetector",
+                "AnalysisComponentName": "AMiner: New event type.",
+                "Message": "New path(es) detected",
+                "PersistenceFileName": "nmpd",
+                "TrainingMode": false,
+                "AffectedLogAtomPaths": [
+                    "/model/service/sudo",
+                    "/model/service/sudo/cron_str",
+                    "/model/service/sudo/msg"
+                ]
+            },
+            "LogData": {
+                "RawLogData": [
+                    "Jan 23 12:55:16 intranet-server sudo: pam_unix(sudo:session): session closed for user root"
+                ],
+                "Timestamps": [
+                    1642942516
+                ],
+                "DetectionTimestamp": [
+                    1642942516
+                ],
+                "LogLinesCount": 1,
+                "LogResources": [
+                    "/var/log/auth.log"
+                ]
+            },
+            "AMiner": {
+                "ID": "172.21.241.88"
+            }
+        },
+        {
+            "AnalysisComponent": {
+                "AnalysisComponentIdentifier": 23,
+                "AnalysisComponentType": "NewMatchPathValueComboDetector",
+                "AnalysisComponentName": "AMiner: New user_end parameter combination in Audit logs.",
+                "Message": "New value combination(s) detected",
+                "PersistenceFileName": "nmpvcd_user_end",
+                "TrainingMode": false,
+                "AffectedLogAtomPaths": [
+                    "/model/type/user_end/uid",
+                    "/model/type/user_end/msg2",
+                    "/model/type/user_end/fm/acct/acct",
+                    "/model/type/user_end/opt/opt_seq/exe"
+                ],
+                "AffectedLogAtomValues": [
+                    "0",
+                    "'op=PAM:session_close",
+                    "\"root\"",
+                    "\"/usr/bin/sudo\""
+                ]
+            },
+            "LogData": {
+                "RawLogData": [
+                    "type=USER_END msg=audit(1642942516.003:2988): pid=28732 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:session_close acct=\"root\" exe=\"/usr/bin/sudo\" hostname=? addr=? terminal=/dev/pts/1 res=success'"
+                ],
+                "Timestamps": [
+                    1642942516.0
+                ],
+                "DetectionTimestamp": [
+                    1642942516.0
+                ],
+                "LogLinesCount": 1,
+                "LogResources": [
+                    "/var/log/audit/audit.log"
+                ]
+            },
+            "AMiner": {
+                "ID": "172.21.241.88"
+            }
+        },
+        {
+            "AnalysisComponent": {
+                "AnalysisComponentIdentifier": 22,
+                "AnalysisComponentType": "NewMatchPathValueComboDetector",
+                "AnalysisComponentName": "AMiner: New cred_disp parameter combination in Audit logs.",
+                "Message": "New value combination(s) detected",
+                "PersistenceFileName": "nmpvcd_cred_disp",
+                "TrainingMode": false,
+                "AffectedLogAtomPaths": [
+                    "/model/type/cred_disp/uid",
+                    "/model/type/cred_disp/msg2",
+                    "/model/type/cred_disp/fm/acct/acct",
+                    "/model/type/cred_disp/opt/opt_seq/exe"
+                ],
+                "AffectedLogAtomValues": [
+                    "0",
+                    "'op=PAM:setcred",
+                    "\"root\"",
+                    "\"/usr/bin/sudo\""
+                ]
+            },
+            "LogData": {
+                "RawLogData": [
+                    "type=CRED_DISP msg=audit(1642942516.003:2989): pid=28732 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct=\"root\" exe=\"/usr/bin/sudo\" hostname=? addr=? terminal=/dev/pts/1 res=success'"
+                ],
+                "Timestamps": [
+                    1642942516.0
+                ],
+                "DetectionTimestamp": [
+                    1642942516.0
+                ],
+                "LogLinesCount": 1,
+                "LogResources": [
+                    "/var/log/audit/audit.log"
+                ]
+            },
+            "AMiner": {
+                "ID": "172.21.241.88"
+            }
+        },
+        {
+            "AnalysisComponent": {
+                "AnalysisComponentIdentifier": 3,
+                "AnalysisComponentType": "NewMatchPathDetector",
+                "AnalysisComponentName": "AMiner: New event type.",
+                "Message": "New path(es) detected",
+                "PersistenceFileName": "nmpd",
+                "TrainingMode": false,
+                "AffectedLogAtomPaths": [
+                    "/model/service/sudo",
+                    "/model/service/sudo/cron_str",
+                    "/model/service/sudo/msg"
+                ]
+            },
+            "LogData": {
+                "RawLogData": [
+                    "Jan 23 12:55:19 intranet-server sudo:    blord : TTY=pts/1 ; PWD=/var/www/intranet.hurstwong.wardbeck.info/wp-content/uploads/2022/01 ; USER=root ; COMMAND=/bin/ls -laR /root/"
+                ],
+                "Timestamps": [
+                    1642942519
+                ],
+                "DetectionTimestamp": [
+                    1642942519
+                ],
+                "LogLinesCount": 1,
+                "LogResources": [
+                    "/var/log/auth.log"
+                ]
+            },
+            "AMiner": {
+                "ID": "172.21.241.88"
+            }
+        },
+        {
+            "AnalysisComponent": {
+                "AnalysisComponentIdentifier": 3,
+                "AnalysisComponentType": "NewMatchPathDetector",
+                "AnalysisComponentName": "AMiner: New event type.",
+                "Message": "New path(es) detected",
+                "PersistenceFileName": "nmpd",
+                "TrainingMode": false,
+                "AffectedLogAtomPaths": [
+                    "/model/service/sudo",
+                    "/model/service/sudo/cron_str",
+                    "/model/service/sudo/msg"
+                ]
+            },
+            "LogData": {
+                "RawLogData": [
+                    "Jan 23 12:55:19 intranet-server sudo: pam_unix(sudo:session): session opened for user root by (uid=0)"
+                ],
+                "Timestamps": [
+                    1642942519
+                ],
+                "DetectionTimestamp": [
+                    1642942519
+                ],
+                "LogLinesCount": 1,
+                "LogResources": [
+                    "/var/log/auth.log"
+                ]
+            },
+            "AMiner": {
+                "ID": "172.21.241.88"
+            }
+        },
+        {
+            "AnalysisComponent": {
+                "AnalysisComponentIdentifier": 3,
+                "AnalysisComponentType": "NewMatchPathDetector",
+                "AnalysisComponentName": "AMiner: New event type.",
+                "Message": "New path(es) detected",
+                "PersistenceFileName": "nmpd",
+                "TrainingMode": false,
+                "AffectedLogAtomPaths": [
+                    "/model/service/sudo",
+                    "/model/service/sudo/cron_str",
+                    "/model/service/sudo/msg"
+                ]
+            },
+            "LogData": {
+                "RawLogData": [
+                    "Jan 23 12:55:19 intranet-server sudo: pam_unix(sudo:session): session closed for user root"
+                ],
+                "Timestamps": [
+                    1642942519
+                ],
+                "DetectionTimestamp": [
+                    1642942519
+                ],
+                "LogLinesCount": 1,
+                "LogResources": [
+                    "/var/log/auth.log"
+                ]
+            },
+            "AMiner": {
+                "ID": "172.21.241.88"
+            }
+        },
+        {
+            "AnalysisComponent": {
+                "AnalysisComponentIdentifier": 3,
+                "AnalysisComponentType": "NewMatchPathDetector",
+                "AnalysisComponentName": "AMiner: New event type.",
+                "Message": "New path(es) detected",
+                "PersistenceFileName": "nmpd",
+                "TrainingMode": false,
+                "AffectedLogAtomPaths": [
+                    "/model/type/user_cmd",
+                    "/model/type/user_cmd/msg1_str",
+                    "/model/type/user_cmd/audit_str",
+                    "/model/type/user_cmd/time",
+                    "/model/type/user_cmd/colon_str",
+                    "/model/type/user_cmd/id",
+                    "/model/type/user_cmd/pid_str",
+                    "/model/type/user_cmd/pid",
+                    "/model/type/user_cmd/uid_str",
+                    "/model/type/user_cmd/uid",
+                    "/model/type/user_cmd/auid_str",
+                    "/model/type/user_cmd/auid",
+                    "/model/type/user_cmd/ses_str",
+                    "/model/type/user_cmd/ses",
+                    "/model/type/user_cmd/msg2_str",
+                    "/model/type/user_cmd/msg2",
+                    "/model/type/user_cmd/fm/cmd",
+                    "/model/type/user_cmd/opt",
+                    "/model/type/user_cmd/terminal_str",
+                    "/model/type/user_cmd/terminal",
+                    "/model/type/user_cmd/res_str",
+                    "/model/type/user_cmd/res",
+                    "/model/type/user_cmd/fm/cmd/cmd_str",
+                    "/model/type/user_cmd/fm/cmd/cmd"
+                ]
+            },
+            "LogData": {
+                "RawLogData": [
+                    "type=USER_CMD msg=audit(1642942519.275:2990): pid=28734 uid=1001 auid=4294967295 ses=4294967295 msg='cwd=\"/var/www/intranet.hurstwong.wardbeck.info/wp-content/uploads/2022/01\" cmd=6C73202D6C6152202F726F6F742F terminal=pts/1 res=success'"
+                ],
+                "Timestamps": [
+                    1642942519.28
+                ],
+                "DetectionTimestamp": [
+                    1642942519.28
+                ],
+                "LogLinesCount": 1,
+                "LogResources": [
+                    "/var/log/audit/audit.log"
+                ]
+            },
+            "AMiner": {
+                "ID": "172.21.241.88"
+            }
+        },
+        {
+            "AnalysisComponent": {
+                "AnalysisComponentIdentifier": 24,
+                "AnalysisComponentType": "NewMatchPathValueComboDetector",
+                "AnalysisComponentName": "AMiner: New user_cmd parameter combination in Audit logs.",
+                "Message": "New value combination(s) detected",
+                "PersistenceFileName": "nmpvcd_user_cmd",
+                "TrainingMode": false,
+                "AffectedLogAtomPaths": [
+                    "/model/type/user_cmd/uid"
+                ],
+                "AffectedLogAtomValues": [
+                    "1001"
+                ]
+            },
+            "LogData": {
+                "RawLogData": [
+                    "type=USER_CMD msg=audit(1642942519.275:2990): pid=28734 uid=1001 auid=4294967295 ses=4294967295 msg='cwd=\"/var/www/intranet.hurstwong.wardbeck.info/wp-content/uploads/2022/01\" cmd=6C73202D6C6152202F726F6F742F terminal=pts/1 res=success'"
+                ],
+                "Timestamps": [
+                    1642942519.28
+                ],
+                "DetectionTimestamp": [
+                    1642942519.28
+                ],
+                "LogLinesCount": 1,
+                "LogResources": [
+                    "/var/log/audit/audit.log"
+                ]
+            },
+            "AMiner": {
+                "ID": "172.21.241.88"
+            }
+        },
+        {
+            "AnalysisComponent": {
+                "AnalysisComponentIdentifier": 3,
+                "AnalysisComponentType": "NewMatchPathDetector",
+                "AnalysisComponentName": "AMiner: New event type.",
+                "Message": "New path(es) detected",
+                "PersistenceFileName": "nmpd",
+                "TrainingMode": false,
+                "AffectedLogAtomPaths": [
+                    "/model/type/cred_refr",
+                    "/model/type/cred_refr/msg1_str",
+                    "/model/type/cred_refr/audit_str",
+                    "/model/type/cred_refr/time",
+                    "/model/type/cred_refr/colon_str",
+                    "/model/type/cred_refr/id",
+                    "/model/type/cred_refr/pid_str",
+                    "/model/type/cred_refr/pid",
+                    "/model/type/cred_refr/uid_str",
+                    "/model/type/cred_refr/uid",
+                    "/model/type/cred_refr/auid_str",
+                    "/model/type/cred_refr/auid",
+                    "/model/type/cred_refr/ses_str",
+                    "/model/type/cred_refr/ses",
+                    "/model/type/cred_refr/msg2_str",
+                    "/model/type/cred_refr/msg2",
+                    "/model/type/cred_refr/fm/acct",
+                    "/model/type/cred_refr/opt",
+                    "/model/type/cred_refr/terminal_str",
+                    "/model/type/cred_refr/terminal",
+                    "/model/type/cred_refr/res_str",
+                    "/model/type/cred_refr/res",
+                    "/model/type/cred_refr/opt/opt_seq",
+                    "/model/type/cred_refr/opt/opt_seq/exe_str",
+                    "/model/type/cred_refr/opt/opt_seq/exe",
+                    "/model/type/cred_refr/opt/opt_seq/hostname_str",
+                    "/model/type/cred_refr/opt/opt_seq/hostname",
+                    "/model/type/cred_refr/opt/opt_seq/addr_str",
+                    "/model/type/cred_refr/opt/opt_seq/addr",
+                    "/model/type/cred_refr/fm/acct/acct_str",
+                    "/model/type/cred_refr/fm/acct/acct"
+                ]
+            },
+            "LogData": {
+                "RawLogData": [
+                    "type=CRED_REFR msg=audit(1642942519.279:2991): pid=28734 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct=\"root\" exe=\"/usr/bin/sudo\" hostname=? addr=? terminal=/dev/pts/1 res=success'"
+                ],
+                "Timestamps": [
+                    1642942519.28
+                ],
+                "DetectionTimestamp": [
+                    1642942519.28
+                ],
+                "LogLinesCount": 1,
+                "LogResources": [
+                    "/var/log/audit/audit.log"
+                ]
+            },
+            "AMiner": {
+                "ID": "172.21.241.88"
+            }
+        },
+        {
+            "AnalysisComponent": {
+                "AnalysisComponentIdentifier": 17,
+                "AnalysisComponentType": "NewMatchPathValueComboDetector",
+                "AnalysisComponentName": "AMiner: New cred_refr parameter combination in Audit logs.",
+                "Message": "New value combination(s) detected",
+                "PersistenceFileName": "nmpvcd_cred_refr",
+                "TrainingMode": false,
+                "AffectedLogAtomPaths": [
+                    "/model/type/cred_refr/uid",
+                    "/model/type/cred_refr/msg2",
+                    "/model/type/cred_refr/fm/acct/acct",
+                    "/model/type/cred_refr/opt/opt_seq/exe"
+                ],
+                "AffectedLogAtomValues": [
+                    "0",
+                    "'op=PAM:setcred",
+                    "\"root\"",
+                    "\"/usr/bin/sudo\""
+                ]
+            },
+            "LogData": {
+                "RawLogData": [
+                    "type=CRED_REFR msg=audit(1642942519.279:2991): pid=28734 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct=\"root\" exe=\"/usr/bin/sudo\" hostname=? addr=? terminal=/dev/pts/1 res=success'"
+                ],
+                "Timestamps": [
+                    1642942519.28
+                ],
+                "DetectionTimestamp": [
+                    1642942519.28
+                ],
+                "LogLinesCount": 1,
+                "LogResources": [
+                    "/var/log/audit/audit.log"
+                ]
+            },
+            "AMiner": {
+                "ID": "172.21.241.88"
+            }
+        },
+        {
+            "AnalysisComponent": {
+                "AnalysisComponentIdentifier": 18,
+                "AnalysisComponentType": "NewMatchPathValueComboDetector",
+                "AnalysisComponentName": "AMiner: New user_start parameter combination in Audit logs.",
+                "Message": "New value combination(s) detected",
+                "PersistenceFileName": "nmpvcd_user_start",
+                "TrainingMode": false,
+                "AffectedLogAtomPaths": [
+                    "/model/type/user_start/uid",
+                    "/model/type/user_start/msg2",
+                    "/model/type/user_start/fm/acct/acct",
+                    "/model/type/user_start/opt/opt_seq/exe"
+                ],
+                "AffectedLogAtomValues": [
+                    "0",
+                    "'op=PAM:session_open",
+                    "\"root\"",
+                    "\"/usr/bin/sudo\""
+                ]
+            },
+            "LogData": {
+                "RawLogData": [
+                    "type=USER_START msg=audit(1642942519.279:2992): pid=28734 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:session_open acct=\"root\" exe=\"/usr/bin/sudo\" hostname=? addr=? terminal=/dev/pts/1 res=success'"
+                ],
+                "Timestamps": [
+                    1642942519.28
+                ],
+                "DetectionTimestamp": [
+                    1642942519.28
+                ],
+                "LogLinesCount": 1,
+                "LogResources": [
+                    "/var/log/audit/audit.log"
+                ]
+            },
+            "AMiner": {
+                "ID": "172.21.241.88"
+            }
+        },
+        {
+            "AnalysisComponent": {
+                "AnalysisComponentIdentifier": 23,
+                "AnalysisComponentType": "NewMatchPathValueComboDetector",
+                "AnalysisComponentName": "AMiner: New user_end parameter combination in Audit logs.",
+                "Message": "New value combination(s) detected",
+                "PersistenceFileName": "nmpvcd_user_end",
+                "TrainingMode": false,
+                "AffectedLogAtomPaths": [
+                    "/model/type/user_end/uid",
+                    "/model/type/user_end/msg2",
+                    "/model/type/user_end/fm/acct/acct",
+                    "/model/type/user_end/opt/opt_seq/exe"
+                ],
+                "AffectedLogAtomValues": [
+                    "0",
+                    "'op=PAM:session_close",
+                    "\"root\"",
+                    "\"/usr/bin/sudo\""
+                ]
+            },
+            "LogData": {
+                "RawLogData": [
+                    "type=USER_END msg=audit(1642942519.499:2993): pid=28734 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:session_close acct=\"root\" exe=\"/usr/bin/sudo\" hostname=? addr=? terminal=/dev/pts/1 res=success'"
+                ],
+                "Timestamps": [
+                    1642942519.5
+                ],
+                "DetectionTimestamp": [
+                    1642942519.5
+                ],
+                "LogLinesCount": 1,
+                "LogResources": [
+                    "/var/log/audit/audit.log"
+                ]
+            },
+            "AMiner": {
+                "ID": "172.21.241.88"
+            }
+        },
+        {
+            "AnalysisComponent": {
+                "AnalysisComponentIdentifier": 22,
+                "AnalysisComponentType": "NewMatchPathValueComboDetector",
+                "AnalysisComponentName": "AMiner: New cred_disp parameter combination in Audit logs.",
+                "Message": "New value combination(s) detected",
+                "PersistenceFileName": "nmpvcd_cred_disp",
+                "TrainingMode": false,
+                "AffectedLogAtomPaths": [
+                    "/model/type/cred_disp/uid",
+                    "/model/type/cred_disp/msg2",
+                    "/model/type/cred_disp/fm/acct/acct",
+                    "/model/type/cred_disp/opt/opt_seq/exe"
+                ],
+                "AffectedLogAtomValues": [
+                    "0",
+                    "'op=PAM:setcred",
+                    "\"root\"",
+                    "\"/usr/bin/sudo\""
+                ]
+            },
+            "LogData": {
+                "RawLogData": [
+                    "type=CRED_DISP msg=audit(1642942519.499:2994): pid=28734 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct=\"root\" exe=\"/usr/bin/sudo\" hostname=? addr=? terminal=/dev/pts/1 res=success'"
+                ],
+                "Timestamps": [
+                    1642942519.5
+                ],
+                "DetectionTimestamp": [
+                    1642942519.5
+                ],
+                "LogLinesCount": 1,
+                "LogResources": [
+                    "/var/log/audit/audit.log"
+                ]
+            },
+            "AMiner": {
+                "ID": "172.21.241.88"
+            }
+        }
+    ]
+}

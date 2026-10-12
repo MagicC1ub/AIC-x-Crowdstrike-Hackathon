@@ -1,6 +1,0 @@
-{
-    "scenario": "russellmitchell",
-    "attack_type": "cracking",
-    "wazuh_logs": [],
-    "aminer_logs": []
-}
