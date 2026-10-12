@@ -1,0 +1,5 @@
+.env
+*.zip
+*.json
+!demo_*.json
+__pycache__/
